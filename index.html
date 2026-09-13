@@ -30,7 +30,7 @@
   <main>
     <section id="treeView" class="view active">
       <div class="view-heading">
-        <div><p class="eyebrow">Directe familielijnen</p><h1>Interactieve stamboom</h1><p>Klik op een persoon voor levensverhaal, levensloop, woonplaatsen en archiefstukken.</p></div>
+        <div><p class="eyebrow">Directe familielijnen</p><h1>Interactieve stamboom</h1><p>Klik op een persoon om het volledige persoonsprofiel te openen.</p></div>
         <div class="chips" aria-label="Filter familietak">
           <button class="chip active" data-branch="all" type="button">Alles</button>
           <button class="chip" data-branch="gerritsen" type="button">Gerritsen</button>
@@ -59,9 +59,26 @@
             <div><p id="personGeneration" class="eyebrow"></p><h2 id="personName"></h2><p id="personLife" class="muted"></p></div>
           </div>
           <div id="personFacts" class="facts"></div>
-          <section class="detail story-detail"><h3>Levensverhaal</h3><div id="personStory" class="person-story"></div></section>
-          <section class="detail"><h3>Persoonlijke tijdlijn</h3><div id="personTimeline"></div></section>
-          <section class="detail"><h3>Archief</h3><div id="personArchive"></div></section>
+
+          <nav class="profile-tabs" aria-label="Persoonsprofiel">
+            <button class="profile-tab active" data-profile-tab="story" type="button">Levensverhaal</button>
+            <button class="profile-tab" data-profile-tab="family" type="button">Familie</button>
+            <button class="profile-tab" data-profile-tab="timeline" type="button">Tijdlijn</button>
+            <button class="profile-tab" data-profile-tab="archive" type="button">Archief</button>
+          </nav>
+
+          <section id="profile-story" class="profile-panel active">
+            <div id="personStory" class="person-story"></div>
+          </section>
+          <section id="profile-family" class="profile-panel">
+            <div id="personFamily" class="person-family"></div>
+          </section>
+          <section id="profile-timeline" class="profile-panel">
+            <div id="personTimeline"></div>
+          </section>
+          <section id="profile-archive" class="profile-panel">
+            <div id="personArchive"></div>
+          </section>
         </aside>
       </div>
     </section>
