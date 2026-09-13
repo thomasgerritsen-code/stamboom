@@ -5,7 +5,7 @@ const stories=window.FAMILY_STORIES||{};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
 const labels={confirmed:'Bevestigd',strong:'Sterke match',research:'Onderzoeken'};
-let selected='thomas', branch='all', privacy=true, zoom=1;
+let selected='thomas', branch='all', privacy=true, zoom=1, activeProfileTab='story';
 let positions={}, canvas={w:1420,h:920};
 
 function initials(name){return name.split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join('').toUpperCase()}
@@ -18,9 +18,11 @@ function lifeText(p){
 }
 function branchLabel(p){return p.branch==='gerritsen'?'Gerritsen':p.branch==='makkinga'?'Makkinga / Venema':'Gerritsen / Makkinga'}
 function visible(id){const p=data[id];return branch==='all'||id==='thomas'||p?.branch===branch}
+function eventYear(v){const n=parseInt(String(v),10);return Number.isFinite(n)?n:9999}
+
 function descendantsReachable(){
  const levels=[['thomas']], seen=new Set(['thomas']);
- for(let depth=0;depth<10;depth++){
+ for(let depth=0;depth<12;depth++){
   const next=[];
   for(const id of levels[depth]||[]){for(const pid of data[id]?.parents||[]){if(data[pid]&&!seen.has(pid)){seen.add(pid);next.push(pid)}}}
   if(!next.length)break; levels.push(next);
@@ -57,15 +59,22 @@ function drawTree(){
   const dot=document.createElementNS(NS,'circle');dot.setAttribute('cx','-57');dot.setAttribute('cy','-21');dot.setAttribute('r','4');dot.setAttribute('class',`node-status-${p.status||'research'}`);
   const name=document.createElementNS(NS,'text');name.setAttribute('x','0');name.setAttribute('y','-4');name.setAttribute('text-anchor','middle');name.setAttribute('class','node-name');name.textContent=p.name.length>22?p.name.slice(0,21)+'…':p.name;
   const meta=document.createElementNS(NS,'text');meta.setAttribute('x','0');meta.setAttribute('y','16');meta.setAttribute('text-anchor','middle');meta.setAttribute('class','node-meta');const by=p.birth?.year||'?';const dy=p.death?.year?`–${p.death.year}`:'';meta.textContent=p.living&&privacy?String(by):`${by}${dy}`;
-  g.append(rect,dot,name,meta); const activate=()=>selectPerson(id);g.addEventListener('click',activate);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate()}});nodes.appendChild(g);
+  g.append(rect,dot,name,meta); const activate=()=>selectPerson(id,true);g.addEventListener('click',activate);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate()}});nodes.appendChild(g);
  });
 }
+
 function fact(label,value){return value?`<dl class="fact"><dt>${esc(label)}</dt><dd>${esc(value)}</dd></dl>`:''}
-function selectPerson(id){if(!data[id])return;selected=id;updatePerson();drawTree()}
+function setProfileTab(name){
+ activeProfileTab=name;
+ $$('.profile-tab').forEach(b=>b.classList.toggle('active',b.dataset.profileTab===name));
+ $$('.profile-panel').forEach(p=>p.classList.toggle('active',p.id===`profile-${name}`));
+}
+function selectPerson(id,resetTab=false){if(!data[id])return;selected=id;if(resetTab)activeProfileTab='story';updatePerson();drawTree();setProfileTab(activeProfileTab)}
+
 function generatedStory(id,p){
  const parts=[]; const b=p.birth||{}, d=p.death||{};
  const bDate=(p.living&&privacy)?(b.year?String(b.year):''):(b.date?dateNL(b.date):(b.year?String(b.year):''));
- if(bDate) parts.push(`${p.name} werd ${bDate.includes(' ')?'op ': 'in '}${bDate}${b.place?` in ${b.place}`:''} geboren.`);
+ if(bDate) parts.push(`${p.name} werd ${bDate.includes(' ')?'op ':'in '}${bDate}${b.place?` in ${b.place}`:''} geboren.`);
  else parts.push(`${p.name} behoort tot de ${branchLabel(p)}-tak van de familie.`);
  const parentNames=(p.parents||[]).map(pid=>data[pid]?.name).filter(Boolean);
  if(parentNames.length===2) parts.push(`${p.name} was een kind van ${parentNames[0]} en ${parentNames[1]}.`);
@@ -78,19 +87,46 @@ function generatedStory(id,p){
 }
 function storyFor(id,p){return stories[id]||generatedStory(id,p)}
 function storyHasUncertainty(p){return (p.events||[]).some(e=>e.status&&e.status!=='confirmed')||(p.archive||[]).some(a=>a.status&&a.status!=='confirmed')||p.status==='strong'||p.status==='research'}
+
+function childrenOf(id){return Object.entries(data).filter(([,p])=>(p.parents||[]).includes(id)).map(([cid])=>cid)}
+function partnersOf(id){
+ const out=new Set();
+ childrenOf(id).forEach(cid=>{(data[cid]?.parents||[]).forEach(pid=>{if(pid!==id&&data[pid])out.add(pid)})});
+ return [...out];
+}
+function siblingsOf(id){
+ const parents=new Set(data[id]?.parents||[]); if(!parents.size)return[];
+ return Object.entries(data).filter(([oid,p])=>oid!==id&&(p.parents||[]).some(pid=>parents.has(pid))).map(([oid])=>oid);
+}
+function relationCard(id){
+ const p=data[id]; if(!p)return'';
+ return `<button type="button" class="relation-card" data-person-id="${esc(id)}"><span class="relation-avatar">${esc(initials(p.name))}</span><span class="relation-copy"><strong>${esc(p.name)}</strong><small>${esc(lifeText(p)||p.generation||'Familielid')}</small></span><span class="relation-arrow">›</span></button>`;
+}
+function relationGroup(title,ids,emptyText){
+ const unique=[...new Set(ids)].filter(id=>data[id]);
+ return `<section class="relation-group"><h3>${esc(title)}</h3>${unique.length?unique.map(relationCard).join(''):`<p class="muted relation-empty">${esc(emptyText)}</p>`}</section>`;
+}
+function renderFamily(id,p){
+ const parents=(p.parents||[]).filter(pid=>data[pid]);
+ const partners=partnersOf(id), children=childrenOf(id), siblings=siblingsOf(id);
+ $('#personFamily').innerHTML=relationGroup('Ouders',parents,'Nog geen ouders gekoppeld.')+relationGroup('Partner',partners,'Nog geen partner gekoppeld.')+relationGroup('Kinderen',children,'Nog geen kinderen gekoppeld.')+relationGroup('Broers & zussen',siblings,'Nog geen broers of zussen in de huidige database.');
+}
+
 function updatePerson(){
  const p=data[selected]; $('#portrait').textContent=initials(p.name);$('#portrait').style.backgroundImage=p.photo?`url(${JSON.stringify(p.photo).slice(1,-1)})`:'';
  $('#personGeneration').textContent=p.generation||'Persoon';$('#personName').textContent=p.name;$('#personLife').textContent=lifeText(p);
  const occupations=(p.occupations||[]).join(' · '), places=(p.places||[]).join(' · ');
  $('#personFacts').innerHTML=fact('Familietak',branchLabel(p))+fact('Beroep',occupations||'Nog uitzoeken')+fact('Woonplaatsen',places||'Nog uitzoeken')+fact('Onderzoeksstatus',labels[p.status]||'Onderzoeken');
  const story=$('#personStory');story.innerHTML=`<p>${esc(storyFor(selected,p))}</p>${storyHasUncertainty(p)?'<span class="story-note">Dit verhaal bevat één of meer sterke matches of onderzoeksaanwijzingen. Bekijk de bronstatus in de tijdlijn en het archief.</span>':''}`;
- const tl=$('#personTimeline');tl.innerHTML='';(p.events||[]).sort((a,b)=>Number(a.year)-Number(b.year)).forEach(e=>{const d=document.createElement('div');d.className='mini-event';d.innerHTML=`<time>${esc(e.year)}</time><span>${esc(e.label)}</span>`;tl.appendChild(d)});if(!(p.events||[]).length)tl.innerHTML='<p class="muted">Nog geen gebeurtenissen.</p>';
- const ar=$('#personArchive');ar.innerHTML='';(p.archive||[]).forEach((item,i)=>{const b=document.createElement('button');b.type='button';b.className='archive-link';b.innerHTML=`<strong>${esc(item.title)}</strong><small>${esc(item.note||'')}</small>`;b.addEventListener('click',()=>openArchive(selected,i));ar.appendChild(b)});if(!(p.archive||[]).length)ar.innerHTML='<p class="muted">Nog geen foto’s of documenten gekoppeld.</p>';
+ renderFamily(selected,p);
+ const tl=$('#personTimeline');tl.innerHTML='';[...(p.events||[])].sort((a,b)=>eventYear(a.year)-eventYear(b.year)).forEach(e=>{const d=document.createElement('div');d.className='mini-event';d.innerHTML=`<time>${esc(e.year)}</time><span>${esc(e.label)}${e.status?` <em class="event-status ${esc(e.status)}">${esc(labels[e.status]||'Onderzoeken')}</em>`:''}</span>`;tl.appendChild(d)});if(!(p.events||[]).length)tl.innerHTML='<p class="muted">Nog geen gebeurtenissen.</p>';
+ const ar=$('#personArchive');ar.innerHTML='';(p.archive||[]).forEach((item,i)=>{const b=document.createElement('button');b.type='button';b.className='archive-link';b.innerHTML=`<strong>${esc(item.title)}</strong><small>${esc(item.note||'')}</small><span class="archive-status ${esc(item.status||'research')}">${esc(labels[item.status]||'Onderzoeken')}</span>`;b.addEventListener('click',()=>openArchive(selected,i));ar.appendChild(b)});if(!(p.archive||[]).length)ar.innerHTML='<p class="muted">Nog geen foto’s of documenten gekoppeld.</p>';
 }
+
 function allEvents(filter='all'){
- const out=[];Object.entries(data).forEach(([id,p])=>{if(filter!=='all'&&p.branch!==filter)return;(p.events||[]).forEach(e=>out.push({id,p,e}))});return out.sort((a,b)=>Number(a.e.year)-Number(b.e.year)||a.p.name.localeCompare(b.p.name));
+ const out=[];Object.entries(data).forEach(([id,p])=>{if(filter!=='all'&&p.branch!==filter)return;(p.events||[]).forEach(e=>out.push({id,p,e}))});return out.sort((a,b)=>eventYear(a.e.year)-eventYear(b.e.year)||a.p.name.localeCompare(b.p.name));
 }
-function renderTimeline(){const f=$('#timelineBranch').value,el=$('#globalTimeline');el.innerHTML='';allEvents(f).forEach(({id,p,e})=>{const d=document.createElement('article');d.className='timeline-entry';d.innerHTML=`<div class="timeline-year">${esc(e.year)}</div><h2>${esc(p.name)}</h2><p>${esc(e.label)}</p>`;d.addEventListener('click',()=>{showView('tree');branch='all';syncBranchButtons();selectPerson(id)});el.appendChild(d)})}
+function renderTimeline(){const f=$('#timelineBranch').value,el=$('#globalTimeline');el.innerHTML='';allEvents(f).forEach(({id,p,e})=>{const d=document.createElement('article');d.className='timeline-entry';d.innerHTML=`<div class="timeline-year">${esc(e.year)}</div><h2>${esc(p.name)}</h2><p>${esc(e.label)}</p>`;d.addEventListener('click',()=>{showView('tree');branch='all';syncBranchButtons();selectPerson(id,true)});el.appendChild(d)})}
 function archiveItems(){const arr=[];Object.entries(data).forEach(([id,p])=>(p.archive||[]).forEach((item,i)=>arr.push({id,p,item,index:i})));return arr}
 function renderArchive(){const type=$('#archiveType').value,grid=$('#archiveGrid');grid.innerHTML='';let items=archiveItems();if(type!=='all')items=items.filter(x=>x.item.type===type);items.forEach(({id,p,item,index})=>{const c=document.createElement('article');c.className='archive-card';const vis=item.image?`style="background-image:url('${esc(item.image)}')"`:'';const icon=item.type==='photo'?'◎':item.type==='document'?'▤':'↗';c.innerHTML=`<div class="archive-visual" ${vis}>${item.image?'':icon}</div><div class="archive-body"><span class="archive-type">${esc(item.type||'source')} · ${esc(p.name)}</span><h2>${esc(item.title)}</h2><p>${esc(item.note||'')}</p><button type="button">Bekijken</button></div>`;c.querySelector('button').addEventListener('click',()=>openArchive(id,index));grid.appendChild(c)});if(!items.length)grid.innerHTML='<p class="muted">Nog geen archiefstukken in deze categorie.</p>'}
 function openArchive(id,index){const p=data[id],item=p.archive[index];if(!item)return;const status=labels[item.status]||'Onderzoeken';let html=`<p class="eyebrow">${esc(p.name)}</p><h1>${esc(item.title)}</h1><span class="status">${esc(status)}</span><p>${esc(item.note||'')}</p>`;if(item.image)html+=`<img class="dialog-image" src="${esc(item.image)}" alt="${esc(item.title)}">`;if(item.file)html+=`<p><a href="${esc(item.file)}" target="_blank" rel="noopener">Document openen</a></p>`;if(item.url)html+=`<p><a href="${esc(item.url)}" target="_blank" rel="noopener">Externe bron openen ↗</a></p>`;$('#dialogContent').innerHTML=html;$('#archiveDialog').showModal()}
@@ -99,11 +135,13 @@ function syncBranchButtons(){$$('.chip').forEach(c=>c.classList.toggle('active',
 
 $$('.tab').forEach(t=>t.addEventListener('click',()=>showView(t.dataset.view)));
 $$('.chip').forEach(c=>c.addEventListener('click',()=>{branch=c.dataset.branch;syncBranchButtons();drawTree()}));
+$$('.profile-tab').forEach(t=>t.addEventListener('click',()=>setProfileTab(t.dataset.profileTab)));
+$('#personFamily').addEventListener('click',e=>{const btn=e.target.closest('[data-person-id]');if(!btn)return;branch='all';syncBranchButtons();selectPerson(btn.dataset.personId,true)});
 $('#timelineBranch').addEventListener('change',renderTimeline);$('#archiveType').addEventListener('change',renderArchive);
-$('#privacyToggle').addEventListener('click',e=>{privacy=!privacy;e.currentTarget.setAttribute('aria-pressed',String(privacy));e.currentTarget.textContent=`Privacy: ${privacy?'aan':'uit'}`;updatePerson();drawTree()});
+$('#privacyToggle').addEventListener('click',e=>{privacy=!privacy;e.currentTarget.setAttribute('aria-pressed',String(privacy));e.currentTarget.textContent=`Privacy: ${privacy?'aan':'uit'}`;updatePerson();drawTree();setProfileTab(activeProfileTab)});
 $('#zoomIn').addEventListener('click',()=>{zoom=Math.min(1.6,Math.round((zoom+.1)*10)/10);applyZoom()});$('#zoomOut').addEventListener('click',()=>{zoom=Math.max(.6,Math.round((zoom-.1)*10)/10);applyZoom()});$('#zoomReset').addEventListener('click',()=>{zoom=1;applyZoom()});
 $('#closeDialog').addEventListener('click',()=>$('#archiveDialog').close());$('#archiveDialog').addEventListener('click',e=>{if(e.target===$('#archiveDialog'))$('#archiveDialog').close()});
-$('#search').addEventListener('input',e=>{const q=e.target.value.trim().toLocaleLowerCase('nl-NL');if(!q)return;const hit=Object.entries(data).find(([,p])=>[p.name,p.birth?.place,...(p.places||[]),...(p.occupations||[])].filter(Boolean).join(' ').toLocaleLowerCase('nl-NL').includes(q));if(hit){showView('tree');branch='all';syncBranchButtons();selectPerson(hit[0])}});
+$('#search').addEventListener('input',e=>{const q=e.target.value.trim().toLocaleLowerCase('nl-NL');if(!q)return;const hit=Object.entries(data).find(([id,p])=>[p.name,p.birth?.place,...(p.places||[]),...(p.occupations||[]),stories[id]||''].filter(Boolean).join(' ').toLocaleLowerCase('nl-NL').includes(q));if(hit){showView('tree');branch='all';syncBranchButtons();selectPerson(hit[0],true)}});
 
-updatePerson();drawTree();renderTimeline();renderArchive();
+updatePerson();setProfileTab(activeProfileTab);drawTree();renderTimeline();renderArchive();
 })();
