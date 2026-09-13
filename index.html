@@ -30,7 +30,7 @@
   <main>
     <section id="treeView" class="view active">
       <div class="view-heading">
-        <div><p class="eyebrow">Directe familielijnen</p><h1>Interactieve stamboom</h1><p>Klik op een persoon voor levensloop, woonplaatsen en archiefstukken.</p></div>
+        <div><p class="eyebrow">Directe familielijnen</p><h1>Interactieve stamboom</h1><p>Klik op een persoon voor levensverhaal, levensloop, woonplaatsen en archiefstukken.</p></div>
         <div class="chips" aria-label="Filter familietak">
           <button class="chip active" data-branch="all" type="button">Alles</button>
           <button class="chip" data-branch="gerritsen" type="button">Gerritsen</button>
@@ -59,6 +59,7 @@
             <div><p id="personGeneration" class="eyebrow"></p><h2 id="personName"></h2><p id="personLife" class="muted"></p></div>
           </div>
           <div id="personFacts" class="facts"></div>
+          <section class="detail story-detail"><h3>Levensverhaal</h3><div id="personStory" class="person-story"></div></section>
           <section class="detail"><h3>Persoonlijke tijdlijn</h3><div id="personTimeline"></div></section>
           <section class="detail"><h3>Archief</h3><div id="personArchive"></div></section>
         </aside>
@@ -86,6 +87,7 @@
         <p class="eyebrow">Onderzoeksstatus</p><h1>Bronnen & betrouwbaarheid</h1>
         <p>De site maakt onderscheid tussen bevestigde gegevens, sterke persoonsmatches en aanwijzingen die nog gecontroleerd moeten worden. Zo blijft zichtbaar hoe zeker iedere vondst is.</p>
         <div class="legend"><span><i class="dot confirmed"></i> Bevestigd</span><span><i class="dot strong"></i> Sterke match</span><span><i class="dot research"></i> Onderzoeken</span></div>
+        <h2>Levensverhalen</h2><p>De levensverhalen zijn opgebouwd uit de gegevens en bronnen die op dit moment aan een persoon gekoppeld zijn. Onzekere vondsten worden als aanwijzing of sterke match beschreven en niet als hard bewezen feit.</p>
         <h2>Privacy</h2><p>Omdat deze GitHub Pages-site openbaar kan worden, staat de privacystand standaard aan. Exacte geboortedata van levende personen worden dan niet getoond.</p>
         <h2>Uitbreiden</h2><p>Foto’s komen in <code>assets/photos/</code> en documenten in <code>assets/documents/</code>. In <code>data.js</code> kunnen ze daarna aan een persoon worden gekoppeld.</p>
       </article>
