@@ -1,6 +1,7 @@
 (()=>{
 'use strict';
 const data=window.FAMILY_DATA?.people||{};
+const stories=window.FAMILY_STORIES||{};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
 const labels={confirmed:'Bevestigd',strong:'Sterke match',research:'Onderzoeken'};
@@ -15,6 +16,7 @@ function lifeText(p){
  const died=d.date?`† ${dateNL(d.date)}`:(d.year?`† ${d.year}`:'');
  return [born,died].filter(Boolean).join('  ')+(b.place?` · ${b.place}`:'');
 }
+function branchLabel(p){return p.branch==='gerritsen'?'Gerritsen':p.branch==='makkinga'?'Makkinga / Venema':'Gerritsen / Makkinga'}
 function visible(id){const p=data[id];return branch==='all'||id==='thomas'||p?.branch===branch}
 function descendantsReachable(){
  const levels=[['thomas']], seen=new Set(['thomas']);
@@ -60,11 +62,28 @@ function drawTree(){
 }
 function fact(label,value){return value?`<dl class="fact"><dt>${esc(label)}</dt><dd>${esc(value)}</dd></dl>`:''}
 function selectPerson(id){if(!data[id])return;selected=id;updatePerson();drawTree()}
+function generatedStory(id,p){
+ const parts=[]; const b=p.birth||{}, d=p.death||{};
+ const bDate=(p.living&&privacy)?(b.year?String(b.year):''):(b.date?dateNL(b.date):(b.year?String(b.year):''));
+ if(bDate) parts.push(`${p.name} werd ${bDate.includes(' ')?'op ': 'in '}${bDate}${b.place?` in ${b.place}`:''} geboren.`);
+ else parts.push(`${p.name} behoort tot de ${branchLabel(p)}-tak van de familie.`);
+ const parentNames=(p.parents||[]).map(pid=>data[pid]?.name).filter(Boolean);
+ if(parentNames.length===2) parts.push(`${p.name} was een kind van ${parentNames[0]} en ${parentNames[1]}.`);
+ else if(parentNames.length===1) parts.push(`Als ouder is ${parentNames[0]} in de huidige stamboom bekend.`);
+ if((p.occupations||[]).length) parts.push(`Uit de gevonden bronnen kennen we als beroep of rol: ${(p.occupations||[]).join(', ')}.`);
+ if((p.places||[]).length>1) parts.push(`In de huidige bronnen is ${p.name} verbonden met ${p.places.join(', ')}.`);
+ if(d.date||d.year) parts.push(`${p.name} overleed ${d.date?`op ${dateNL(d.date)}`:`in ${d.year}`}${d.place?` in ${d.place}`:''}.`);
+ if(parts.length===1 && !(p.occupations||[]).length) parts.push('Over het verdere leven van deze persoon zijn nog weinig details aan bronnen gekoppeld; dit profiel wordt uitgebreid zodra nieuwe akten, adressen, beroepen of familieverhalen worden gevonden.');
+ return parts.join(' ');
+}
+function storyFor(id,p){return stories[id]||generatedStory(id,p)}
+function storyHasUncertainty(p){return (p.events||[]).some(e=>e.status&&e.status!=='confirmed')||(p.archive||[]).some(a=>a.status&&a.status!=='confirmed')||p.status==='strong'||p.status==='research'}
 function updatePerson(){
  const p=data[selected]; $('#portrait').textContent=initials(p.name);$('#portrait').style.backgroundImage=p.photo?`url(${JSON.stringify(p.photo).slice(1,-1)})`:'';
  $('#personGeneration').textContent=p.generation||'Persoon';$('#personName').textContent=p.name;$('#personLife').textContent=lifeText(p);
  const occupations=(p.occupations||[]).join(' · '), places=(p.places||[]).join(' · ');
- $('#personFacts').innerHTML=fact('Familietak',p.branch==='gerritsen'?'Gerritsen':p.branch==='makkinga'?'Makkinga / Venema':'Gerritsen / Makkinga')+fact('Beroep',occupations||'Nog uitzoeken')+fact('Woonplaatsen',places||'Nog uitzoeken')+fact('Onderzoeksstatus',labels[p.status]||'Onderzoeken');
+ $('#personFacts').innerHTML=fact('Familietak',branchLabel(p))+fact('Beroep',occupations||'Nog uitzoeken')+fact('Woonplaatsen',places||'Nog uitzoeken')+fact('Onderzoeksstatus',labels[p.status]||'Onderzoeken');
+ const story=$('#personStory');story.innerHTML=`<p>${esc(storyFor(selected,p))}</p>${storyHasUncertainty(p)?'<span class="story-note">Dit verhaal bevat één of meer sterke matches of onderzoeksaanwijzingen. Bekijk de bronstatus in de tijdlijn en het archief.</span>':''}`;
  const tl=$('#personTimeline');tl.innerHTML='';(p.events||[]).sort((a,b)=>Number(a.year)-Number(b.year)).forEach(e=>{const d=document.createElement('div');d.className='mini-event';d.innerHTML=`<time>${esc(e.year)}</time><span>${esc(e.label)}</span>`;tl.appendChild(d)});if(!(p.events||[]).length)tl.innerHTML='<p class="muted">Nog geen gebeurtenissen.</p>';
  const ar=$('#personArchive');ar.innerHTML='';(p.archive||[]).forEach((item,i)=>{const b=document.createElement('button');b.type='button';b.className='archive-link';b.innerHTML=`<strong>${esc(item.title)}</strong><small>${esc(item.note||'')}</small>`;b.addEventListener('click',()=>openArchive(selected,i));ar.appendChild(b)});if(!(p.archive||[]).length)ar.innerHTML='<p class="muted">Nog geen foto’s of documenten gekoppeld.</p>';
 }
