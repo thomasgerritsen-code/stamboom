@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3eee4">
+  <meta name="description" content="Interactieve stamboom en familiearchief van de families Gerritsen, Makkinga, Venema en verwante lijnen.">
+  <title>Familiearchief Gerritsen · Makkinga</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Familiearchief start">
+      <span class="brand-mark">G·M</span>
+      <span><span class="eyebrow">Familiearchief</span><strong>Gerritsen · Makkinga</strong></span>
+    </a>
+    <div class="header-actions">
+      <label class="search-box"><span class="sr-only">Zoeken</span><input id="search" type="search" placeholder="Zoek naam, plaats, beroep…"></label>
+      <button id="privacyToggle" class="button" type="button" aria-pressed="true">Privacy: aan</button>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Hoofdnavigatie">
+    <button class="tab active" data-view="tree" type="button">Stamboom</button>
+    <button class="tab" data-view="timeline" type="button">Tijdlijn</button>
+    <button class="tab" data-view="archive" type="button">Foto’s & documenten</button>
+    <button class="tab" data-view="sources" type="button">Bronnen</button>
+  </nav>
+
+  <main>
+    <section id="treeView" class="view active">
+      <div class="view-heading">
+        <div><p class="eyebrow">Directe familielijnen</p><h1>Interactieve stamboom</h1><p>Klik op een persoon voor levensloop, woonplaatsen en archiefstukken.</p></div>
+        <div class="chips" aria-label="Filter familietak">
+          <button class="chip active" data-branch="all" type="button">Alles</button>
+          <button class="chip" data-branch="gerritsen" type="button">Gerritsen</button>
+          <button class="chip" data-branch="makkinga" type="button">Makkinga / Venema</button>
+        </div>
+      </div>
+
+      <div class="tree-layout">
+        <section class="tree-card">
+          <div class="tree-toolbar">
+            <button id="zoomOut" class="small-button" type="button" aria-label="Uitzoomen">−</button>
+            <button id="zoomReset" class="small-button" type="button">100%</button>
+            <button id="zoomIn" class="small-button" type="button" aria-label="Inzoomen">+</button>
+            <span>Sleep horizontaal op mobiel</span>
+          </div>
+          <div id="treeScroller" class="tree-scroller" tabindex="0">
+            <svg id="treeSvg" viewBox="0 0 1420 920" role="img" aria-label="Interactieve familiestamboom">
+              <g id="treeViewport"><g id="treeLines"></g><g id="treeNodes"></g></g>
+            </svg>
+          </div>
+        </section>
+
+        <aside class="person-panel" aria-live="polite">
+          <div class="person-head">
+            <div id="portrait" class="portrait">TG</div>
+            <div><p id="personGeneration" class="eyebrow"></p><h2 id="personName"></h2><p id="personLife" class="muted"></p></div>
+          </div>
+          <div id="personFacts" class="facts"></div>
+          <section class="detail"><h3>Persoonlijke tijdlijn</h3><div id="personTimeline"></div></section>
+          <section class="detail"><h3>Archief</h3><div id="personArchive"></div></section>
+        </aside>
+      </div>
+    </section>
+
+    <section id="timelineView" class="view">
+      <div class="view-heading">
+        <div><p class="eyebrow">Familiegeschiedenis</p><h1>Tijdlijn</h1><p>Gebeurtenissen van verschillende generaties bij elkaar.</p></div>
+        <select id="timelineBranch" class="select"><option value="all">Alle takken</option><option value="gerritsen">Gerritsen</option><option value="makkinga">Makkinga / Venema</option></select>
+      </div>
+      <div id="globalTimeline" class="global-timeline"></div>
+    </section>
+
+    <section id="archiveView" class="view">
+      <div class="view-heading">
+        <div><p class="eyebrow">Digitaal familiearchief</p><h1>Foto’s & documenten</h1><p>Akten, adressen, oorlogsdocumenten, familiefoto’s en bronverwijzingen.</p></div>
+        <select id="archiveType" class="select"><option value="all">Alle stukken</option><option value="photo">Foto’s</option><option value="document">Documenten</option><option value="source">Bronnen</option></select>
+      </div>
+      <div id="archiveGrid" class="archive-grid"></div>
+    </section>
+
+    <section id="sourcesView" class="view">
+      <article class="prose-card">
+        <p class="eyebrow">Onderzoeksstatus</p><h1>Bronnen & betrouwbaarheid</h1>
+        <p>De site maakt onderscheid tussen bevestigde gegevens, sterke persoonsmatches en aanwijzingen die nog gecontroleerd moeten worden. Zo blijft zichtbaar hoe zeker iedere vondst is.</p>
+        <div class="legend"><span><i class="dot confirmed"></i> Bevestigd</span><span><i class="dot strong"></i> Sterke match</span><span><i class="dot research"></i> Onderzoeken</span></div>
+        <h2>Privacy</h2><p>Omdat deze GitHub Pages-site openbaar kan worden, staat de privacystand standaard aan. Exacte geboortedata van levende personen worden dan niet getoond.</p>
+        <h2>Uitbreiden</h2><p>Foto’s komen in <code>assets/photos/</code> en documenten in <code>assets/documents/</code>. In <code>data.js</code> kunnen ze daarna aan een persoon worden gekoppeld.</p>
+      </article>
+    </section>
+  </main>
+
+  <dialog id="archiveDialog"><button id="closeDialog" class="dialog-close" type="button" aria-label="Sluiten">×</button><div id="dialogContent"></div></dialog>
+  <footer>Familiearchief Gerritsen · Makkinga · gegevens worden stapsgewijs met bronnen gecontroleerd.</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
