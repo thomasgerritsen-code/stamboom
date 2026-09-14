@@ -1,57 +1,26 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-14",
   "activeQuestion": {
-    "id": "verbeek-first-primary-name-use",
-    "question": "Wanneer verschijnt de familienaam Verbeek voor het eerst aantoonbaar in primaire bronnen in de directe lijn Gerrit Hendricksen -> Hendrik Geertsen (1692) -> Peter Hendrikse (1720)?",
-    "importance": "direct-line identity and surname transition",
-    "status": "BLOCKED",
-    "lastAction": "Gecontroleerd: Meteren huwelijkstranscriptie 1717; gerichte webzoekroutes naar Peter/Gerrit/Geertje Hendriksen in Meteren en Open Archieven. Geen primaire 1720-1730 bron gevonden waarin deze tak ondubbelzinnig Verbeek heet.",
-    "missingEvidence": "Een doop-, trouw-, rechterlijke, boedel-, transport- of andere primaire akte uit ca. 1717-1755 waarin Hendrik Geertsen of een aantoonbaar kind van hem met de familienaam Verbeek wordt genoemd.",
-    "bestNextSource": "Regionaal Archief Rivierenland / Gelders Archief: originele DTB Meteren ca. 1717-1755 en lokale rechterlijke/boedelregisters; zoek kinderen en getuigen als FAN-cluster.",
-    "resumeWhen": "Nieuwe scan/index/akteverwijzing beschikbaar is of een collateral record een concrete folio/akte oplevert."
+    "id":"jenneke-dircks-formijne-parentage",
+    "question":"Was Jenneke Dircks, eerste vrouw van Gerrit Hendricksen, aantoonbaar een dochter van Dirk Formijne en Grietje Cornelis van Opijnen te Ophemert?",
+    "importance":"Directe voorouderlijn: bevestigt of verwerpt een volledige generatielink vóór Gerrit Hendricksen.",
+    "status":"CANDIDATE",
+    "lastAction":"Twee secundaire genealogieën gevonden die Jenneke expliciet als dochter in hetzelfde gezin plaatsen. Beide tonen voor deze relatie geen primaire bron; onafhankelijkheid onbekend. Claim daarom aangescherpt en teruggezet van PROBABLE naar CANDIDATE.",
+    "missingEvidence":"Primaire verwantschapsakte waarin Jenneke met Dirk/Grietje of aantoonbare siblings wordt genoemd.",
+    "bestNextSource":"Bank van Tuil/Ophemert boedel-, erfdelings-, voogdij- en transportakten ca. 1655-1682; zoek nalatenschappen van Dirk Formijn en Grietje van Opijnen plus siblingcluster.",
+    "stopCriterion":"Na twee gerichte runs zonder primaire verwantschapsverwijzing tijdelijk BLOCKED maken en naar een andere directe-lijnclaim schakelen."
   },
-  "openClaims": [
-    {
-      "id": "link-gerrit-hendricksen-to-hendrik-1692",
-      "priority": "high",
-      "status": "CONFIRMED",
-      "note": "Dooptranscriptie 2 oktober 1692 koppelt Hendrik aan Gerrit en Lijsken; familienaam Verbeek staat daar niet als bewezen naamvorm."
-    },
-    {
-      "id": "surname-verbeek-hendrik1692",
-      "priority": "high",
-      "status": "BLOCKED",
-      "note": "Doop 1692 en huwelijk 14 maart 1717 gebruiken patroniem/naamvorm zonder Verbeek; latere secundaire bomen noemen Verbeek maar bewijzen het eerste primaire gebruik niet."
-    },
-    {
-      "id": "jenneke-dircks-formijne-parentage",
-      "priority": "medium",
-      "status": "PROBABLE",
-      "note": "Lokale familie Formijne is primair aantoonbaar; specifieke ouder-kindkoppeling Jenneke -> Dirk Formijne wacht op verwantschapsakte."
-    }
+  "openClaims":[
+    {"id":"link-gerrit-hendricksen-to-hendrik-1692","priority":"high","status":"CONFIRMED","note":"Dooptranscriptie 2 oktober 1692 koppelt Hendrik aan Gerrit en Lijsken; familienaam Verbeek staat daar niet als bewezen naamvorm."},
+    {"id":"surname-verbeek-hendrik1692","priority":"high","status":"BLOCKED","note":"Doop 1692 en huwelijk 14 maart 1717 gebruiken patroniem/naamvorm zonder Verbeek; hervatten bij nieuwe concrete primaire aanwijzing."},
+    {"id":"jenneke-dircks-formijne-parentage","priority":"high","status":"CANDIDATE","note":"Meerdere secundaire bomen noemen Jenneke als dochter van Dirk Formijn en Grietje van Opijnen, maar zonder primaire bron en met onbekende onderlinge onafhankelijkheid."}
   ],
-  "conflictQueue": [
-    {
-      "id": "hendrik-verbeek-name-retrojection",
-      "issue": "Latere genealogieën noemen Hendrik Gerritsen Verbeek, terwijl bekende primaire transcripties uit 1692 en 1717 de naam Verbeek niet gebruiken.",
-      "priority": "high"
-    }
-  ],
-  "coverage": [
-    {
-      "claimId": "surname-verbeek-hendrik1692",
-      "sourceCategory": "DTB huwelijk Meteren",
-      "period": "1717",
-      "result": "checked-negative-for-surname",
-      "detail": "14 maart 1717: Hendrik Geertsen x Heijltjen Jans; geen Verbeek."
-    },
-    {
-      "claimId": "surname-verbeek-hendrik1692",
-      "sourceCategory": "web-index/search Open Archieven and targeted exact-name searches",
-      "period": "1717-1755",
-      "result": "no-conclusive-primary-hit",
-      "detail": "Zoekingen naar Peter/Gerrit/Geertje Hendriksen/Verbeek in Meteren leverden geen bruikbare primaire koppeling op."
-    }
+  "conflictQueue":[{"id":"hendrik-verbeek-name-retrojection","issue":"Latere genealogieën noemen Hendrik Gerritsen Verbeek, terwijl bekende primaire transcripties uit 1692 en 1717 de naam Verbeek niet gebruiken.","priority":"high"}],
+  "coverage":[
+    {"claimId":"surname-verbeek-hendrik1692","sourceCategory":"DTB huwelijk Meteren","period":"1717","result":"checked-negative-for-surname","detail":"14 maart 1717: Hendrik Geertsen x Heijltjen Jans; geen Verbeek."},
+    {"claimId":"surname-verbeek-hendrik1692","sourceCategory":"web-index/search","period":"1717-1755","result":"no-conclusive-primary-hit","detail":"Geen bruikbare primaire koppeling gevonden."},
+    {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"secondary genealogies","period":"ca. 1630-1680","result":"explicit-claim-unproven","detail":"Stamboom Hermans en StamboomNederland plaatsen Jenneke expliciet in gezin Dirk Formijn x Grietje van Opijnen; beide zonder zichtbare primaire bron."},
+    {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"local archive index/context","period":"1647-1653","result":"father-context-only","detail":"Bank van Tuil-index bevestigt Dirk Formijn lokaal, maar niet Jenneke als dochter."}
   ]
 }
