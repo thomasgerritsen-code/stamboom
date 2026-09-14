@@ -1,22 +1,23 @@
 {
-  "version": 5,
-  "updated": "2026-09-14",
+  "version": 6,
+  "updated": "2026-09-15",
   "activeQuestion": {
-    "id": "barend1826-parentage",
-    "question": "Kan de ouder-kindrelatie Barend Verbeek (1826-1876) → Hendrik Verbeek (1794-1881) en Maria Magdalena van den Berg (1792-1831) rechtstreeks uit de burgerlijke stand worden bevestigd?",
-    "importance": "Directe Verbeek-lijn; bevestigt de volgende generatielink met een primaire/official-derived bronketen.",
-    "status": "PROBABLE",
-    "lastAction": "Gerichte zoekronde naar geboorte-, huwelijks- en overlijdensakten van Barend. De originele/official-derived oudervermelding is nog niet rechtstreeks gevonden. Stamboom Middag noemt expliciet Hendrik Verbeek en Maria Magdalena van den Berg als ouders en verwijst voor Barends huwelijk en overlijden naar Gelders Archief akten 6 en 36. Een officiële Gelders-Archiefindex van de geboorte van zoon Hendrik in 1868 bevestigt dezelfde Barend Verbeek, leeftijd circa 42, echtgenoot van Geertruida van Aalst en arbeider te Heerewaarden.",
-    "missingEvidence": "Een rechtstreeks raadpleegbare geboorte-, huwelijks- of overlijdensregistratie van Barend waarin Hendrik Verbeek en Maria Magdalena van den Berg expliciet als ouders worden genoemd.",
-    "bestNextSource": "Gelders Archief Burgerlijke stand Varik huwelijksakte nr. 6 van 2 april 1864 en Heerewaarden overlijdensakte nr. 36 van 11 september 1876; daarna geboorte Waardenburg/Neerijnen 18 februari 1826.",
-    "stopCriterion": "Stop zodra één officiële akte de ouder-kindrelatie expliciet vastlegt en identiteit/chronologie overeenkomen; gebruik verdere akten alleen voor conflictcontrole of levensverhaal."
+    "id": "jan1871-parentage",
+    "question": "Kan de ouder-kindrelatie Jan Verbeek (1871-1935) → Barend Verbeek (1826-1876) en Geertruida van Aalst (1840-1916) rechtstreeks uit de burgerlijke stand worden bevestigd?",
+    "importance": "Directe Verbeek-lijn; een officiële geboorte- of huwelijksakte kan deze generatielink efficiënt en onafhankelijk bevestigen.",
+    "status": "CANDIDATE",
+    "lastAction": "Barend1826-parentage na twee gerichte runs tijdelijk BLOCKED gezet omdat webzoekroutes opnieuw alleen dezelfde secundaire genealogieën en de reeds bekende officiële identiteitsakte uit 1868 opleverden; geen rechtstreeks raadpleegbare oudervermelding gevonden.",
+    "missingEvidence": "Een official-derived geboorte- of huwelijksregistratie van Jan Verbeek waarin Barend Verbeek en Geertruida van Aalst expliciet als ouders worden genoemd.",
+    "bestNextSource": "Burgerlijke stand geboorte Jan Verbeek ca. 1871 in Heerewaarden/Varik of zijn huwelijksakte; daarna overlijdensakte 1935 voor conflictcontrole.",
+    "stopCriterion": "Stop zodra één officiële akte Jan expliciet aan Barend Verbeek en Geertruida van Aalst koppelt en identiteit/chronologie overeenkomen."
   },
   "openClaims": [
     {"id":"link-gerrit-hendricksen-to-hendrik-1692","priority":"high","status":"CONFIRMED","note":"Dooptranscriptie 2 oktober 1692 koppelt Hendrik aan Gerrit en Lijsken; familienaam Verbeek staat daar niet als bewezen naamvorm."},
     {"id":"surname-verbeek-hendrik1692","priority":"high","status":"BLOCKED","note":"Doop 1692 en huwelijk 14 maart 1717 gebruiken patroniem/naamvorm zonder Verbeek; hervatten bij nieuwe concrete primaire aanwijzing."},
     {"id":"jenneke-dircks-formijne-parentage","priority":"high","status":"BLOCKED","note":"Secundaire bomen noemen Jenneke als dochter van Dirk Formijn en Grietje van Opijnen; primaire bevestiging ontbreekt. Van-Gessel-publicatie blijft de eerstvolgende gerichte bronroute."},
     {"id":"hendrik1794-parentage","priority":"high","status":"CONFIRMED","note":"Waardenburg huwelijksakte nr. 1 van 25 februari 1815 noemt Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, zoon van Hendrik Verbeek en Clazina de Bruijn."},
-    {"id":"barend1826-parentage","priority":"high","status":"PROBABLE","note":"Sterke secundaire overeenstemming met expliciete verwijzing naar Gelders Archief akten 6 en 36 plus officiële 1868-identiteitscontrole; directe oudervermelding uit de akte zelf nog niet geraadpleegd."}
+    {"id":"barend1826-parentage","priority":"high","status":"BLOCKED","note":"Twee gerichte runs leverden geen direct raadpleegbare officiële oudervermelding op. Secundaire bronnen plus officiële 1868-identiteitscontrole ondersteunen de hypothese sterk, maar niet genoeg voor CONFIRMED. Hervatten zodra Varik akte 6 (1864), Heerewaarden akte 36 (1876) of geboorteakte 1826 direct raadpleegbaar is."},
+    {"id":"jan1871-parentage","priority":"high","status":"CANDIDATE","note":"Nieuwe eerstvolgende directe-lijnclaim; officiële geboorte- of huwelijksakte zoeken die Jan Verbeek aan Barend Verbeek en Geertruida van Aalst koppelt."}
   ],
   "conflictQueue": [
     {"id":"hendrik-verbeek-name-retrojection","issue":"Latere genealogieën noemen Hendrik Gerritsen Verbeek, terwijl bekende primaire transcripties uit 1692 en 1717 de naam Verbeek niet gebruiken.","priority":"high"}
@@ -28,7 +29,8 @@
     {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"Bank van Tuil inv.nr. 1251 index","period":"1647-1653","result":"father-context-only","detail":"Dirk Formijn komt op meerdere folio's voor; index bewijst de ouder-kindrelatie niet."},
     {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"specialist literature discovery","period":"1982-1983","result":"high-value-source-identified-not-yet-inspected","detail":"CBG noemt H.A.P. van Gessel, Genealogie Formijn(e)/Formijne en 'Van hypothese naar bewijs' GN 38 (1983), p.57; NGV catalogus bevestigt Genealogie van het geslacht Formijne, signatuur B-111-FORM-01."},
     {"claimId":"hendrik1794-parentage","sourceCategory":"Burgerlijke stand huwelijk Waardenburg","period":"1815","result":"confirmed-parentage","detail":"Akte nr. 1, 25 februari 1815: Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, zoon van Hendrik Verbeek en Clazina de Bruijn; Gelders Archief 0207, inv. 2720.05."},
-    {"claimId":"barend1826-parentage","sourceCategory":"secondary genealogy with archive citations","period":"1826-1876","result":"strong-indirect-parentage","detail":"Stamboom Middag noemt Barend (18-02-1826 Neerijnen; 10-09-1876 Heerewaarden) als kind van Hendrik Verbeek en Maria Magdalena van den Berg en verwijst naar Gelders Archief akte 6 (huwelijk 1864) en akte 36 (overlijden 1876)."},
-    {"claimId":"barend1826-parentage","sourceCategory":"Gelders Archief BS geboorte Heerewaarden","period":"1868","result":"identity-corroboration","detail":"Geboorteakte zoon Hendrik Verbeek, akte 10, 15-04-1868: vader Barend Verbeek, 42 jaar, arbeider; moeder Geertruida van Aalst. Bevestigt identiteit, leeftijdsrange, partner en wooncontext maar niet Barends ouders."}
+    {"claimId":"barend1826-parentage","sourceCategory":"secondary genealogy with archive citations","period":"1826-1876","result":"strong-indirect-parentage","detail":"Stamboom Middag noemt Barend als kind van Hendrik Verbeek en Maria Magdalena van den Berg en verwijst naar Gelders Archief akte 6 (huwelijk 1864) en akte 36 (overlijden 1876)."},
+    {"claimId":"barend1826-parentage","sourceCategory":"Gelders Archief BS geboorte Heerewaarden","period":"1868","result":"identity-corroboration","detail":"Geboorteakte zoon Hendrik Verbeek, akte 10, 15-04-1868: vader Barend Verbeek, 42 jaar, arbeider; moeder Geertruida van Aalst. Bevestigt identiteit, leeftijdsrange, partner en wooncontext maar niet Barends ouders."},
+    {"claimId":"barend1826-parentage","sourceCategory":"targeted web search for official marriage/death record","period":"1864-1876","result":"repeated-no-direct-official-parentage-hit","detail":"Tweede gerichte zoekronde op Varik huwelijk 1864 en Heerewaarden overlijden 1876 leverde opnieuw dezelfde secundaire publicaties plus de reeds bekende 1868-officiële identiteitsakte, maar geen direct raadpleegbare oudervermelding. Claim tijdelijk BLOCKED om herhalingswerk te voorkomen."}
   ]
 }
