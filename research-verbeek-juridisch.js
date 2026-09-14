@@ -17,8 +17,32 @@ addArchive(id,{
 addArchive(id,{
   type:'source',
   title:'Archiefroute: Gerechtsbank van Deil, 1536–1811',
-  note:'Regionaal Archief Rivierenland beheert toegang 1513, Gerechtsbank van Deil. Uit secundaire verwijzingen blijkt dat het geloftesignaat met inventarisnummer 1095 in 1650–1652 daadwerkelijk transacties betreffende Meteren bevat. Zulke vrijwillige rechtspraak kan transporten, schuldbekentenissen, boedelscheidingen, huwelijkse voorwaarden, volmachten en andere familie-informatie bevatten. Dit is nu de prioritaire bron voor de generatie vóór Gerrit.',
+  note:'Regionaal Archief Rivierenland beheert toegang 1513, Gerechtsbank van Deil. Uit secundaire verwijzingen blijkt dat het geloftesignaat met inventarisnummer 1095 in 1650–1652 daadwerkelijk transacties betreffende Meteren bevat. Zulke vrijwillige rechtspraak kan transporten, schuldbekentenissen, boedelscheidingen, huwelijkse voorwaarden, volmachten en andere familie-informatie bevatten. Dit is een prioritaire bron voor Gerrits familie van herkomst in Meteren.',
   url:'https://regionaalarchiefrivierenland.nl/',
+  status:'confirmed'
+});
+
+addArchive(id,{
+  type:'source',
+  title:'1674 “wonende Hemert”: Nederhemert is nu het sterkste woonspoor',
+  note:'De Meterense huwelijksafkondiging van 1674 noemt Gerrit als jongman van Meteren, wonende te Hemert. Historische plaatsbeschrijvingen tonen dat Nederhemert eeuwenlang ook eenvoudig “Hemert” werd genoemd, terwijl de naam Ophemert al sinds de 16e eeuw expliciet in gebruik was. Daarom is Nederhemert momenteel de sterkste interpretatie van Gerrits woonplaats in 1674, maar wegens historische naamverwarring wordt dit als sterke hypothese en niet als absoluut bewijs behandeld.',
+  url:'https://www.dbnl.org/tekst/verm127bomm02_01/verm127bomm02_01_0012.php',
+  status:'strong'
+});
+
+addArchive(id,{
+  type:'source',
+  title:'Waarom een Nederhemertse doop van Gerrit mogelijk niet meer bestaat',
+  note:'Op 3 mei 1759 brandden in Nederhemert de pastorie en de daar bewaarde kerkboeken af. De predikant reconstrueerde daarna delen van doop-, trouw- en lidmatengegevens uit herinneringen, losse briefjes en verklaringen, maar vermeldde zelf dat de reconstructie gebrekkig en onvolledig was. Het ontbreken van een doop- of lidmateninschrijving voor Gerrit is daarom geen bewijs dat hij niet in Nederhemert verbleef of daar familie had.',
+  url:'https://www.ngv-afdelingen.nl/bet/wp-content/uploads/2024/03/Nederhemert-dopen-1702-1772.pdf',
+  status:'confirmed'
+});
+
+addArchive(id,{
+  type:'source',
+  title:'Prioritaire bronroute: geloftesignaten Nederhemert',
+  note:'De Bommelerwaardse geloftesignaten bevatten vrijwillige rechtspraak zoals verkopen, schulden, boedelscheidingen, huwelijkse voorwaarden, testamenten en borgstellingen. De bank van Nederhemert heeft registers die al in de 16e eeuw beginnen en de bewaarde banden zijn gedigitaliseerd. Omdat de kerkboeken verloren zijn, vormen deze rechterlijke registers nu de beste kans om Gerrit Hendricksen vóór 1674 of zijn mogelijke vader Hendrick in Hemert/Nederhemert te vinden.',
+  url:'https://streekarchiefbommelerwaard.blogspot.com/2013/09/gerechtigheid.html',
   status:'confirmed'
 });
 
