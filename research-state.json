@@ -1,14 +1,14 @@
 {
-  "version": 4,
+  "version": 5,
   "updated": "2026-09-14",
   "activeQuestion": {
     "id": "barend1826-parentage",
     "question": "Kan de ouder-kindrelatie Barend Verbeek (1826-1876) → Hendrik Verbeek (1794-1881) en Maria Magdalena van den Berg (1792-1831) rechtstreeks uit de burgerlijke stand worden bevestigd?",
     "importance": "Directe Verbeek-lijn; bevestigt de volgende generatielink met een primaire/official-derived bronketen.",
-    "status": "CANDIDATE",
-    "lastAction": "De generatielink Hendrik Verbeek (1794) → Hendrik Verbeek en Clazina de Bruijn is in deze run CONFIRMED via de officiële huwelijksregistratie Waardenburg, 25 februari 1815, akte 1.",
-    "missingEvidence": "Geboorte-, huwelijks- of overlijdensakte van Barend waarin Hendrik Verbeek en Maria Magdalena van den Berg als ouders worden genoemd.",
-    "bestNextSource": "Burgerlijke stand geboorte Waardenburg/Neerijnen 18 februari 1826, huwelijk Varik 2 april 1864 akte 6 en/of overlijden Heerewaarden 10/11 september 1876 akte 36.",
+    "status": "PROBABLE",
+    "lastAction": "Gerichte zoekronde naar geboorte-, huwelijks- en overlijdensakten van Barend. De originele/official-derived oudervermelding is nog niet rechtstreeks gevonden. Stamboom Middag noemt expliciet Hendrik Verbeek en Maria Magdalena van den Berg als ouders en verwijst voor Barends huwelijk en overlijden naar Gelders Archief akten 6 en 36. Een officiële Gelders-Archiefindex van de geboorte van zoon Hendrik in 1868 bevestigt dezelfde Barend Verbeek, leeftijd circa 42, echtgenoot van Geertruida van Aalst en arbeider te Heerewaarden.",
+    "missingEvidence": "Een rechtstreeks raadpleegbare geboorte-, huwelijks- of overlijdensregistratie van Barend waarin Hendrik Verbeek en Maria Magdalena van den Berg expliciet als ouders worden genoemd.",
+    "bestNextSource": "Gelders Archief Burgerlijke stand Varik huwelijksakte nr. 6 van 2 april 1864 en Heerewaarden overlijdensakte nr. 36 van 11 september 1876; daarna geboorte Waardenburg/Neerijnen 18 februari 1826.",
     "stopCriterion": "Stop zodra één officiële akte de ouder-kindrelatie expliciet vastlegt en identiteit/chronologie overeenkomen; gebruik verdere akten alleen voor conflictcontrole of levensverhaal."
   },
   "openClaims": [
@@ -16,7 +16,7 @@
     {"id":"surname-verbeek-hendrik1692","priority":"high","status":"BLOCKED","note":"Doop 1692 en huwelijk 14 maart 1717 gebruiken patroniem/naamvorm zonder Verbeek; hervatten bij nieuwe concrete primaire aanwijzing."},
     {"id":"jenneke-dircks-formijne-parentage","priority":"high","status":"BLOCKED","note":"Secundaire bomen noemen Jenneke als dochter van Dirk Formijn en Grietje van Opijnen; primaire bevestiging ontbreekt. Van-Gessel-publicatie blijft de eerstvolgende gerichte bronroute."},
     {"id":"hendrik1794-parentage","priority":"high","status":"CONFIRMED","note":"Waardenburg huwelijksakte nr. 1 van 25 februari 1815 noemt Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, zoon van Hendrik Verbeek en Clazina de Bruijn."},
-    {"id":"barend1826-parentage","priority":"high","status":"CANDIDATE","note":"Directe generatielink die nu als volgende via burgerlijke stand moet worden geverifieerd."}
+    {"id":"barend1826-parentage","priority":"high","status":"PROBABLE","note":"Sterke secundaire overeenstemming met expliciete verwijzing naar Gelders Archief akten 6 en 36 plus officiële 1868-identiteitscontrole; directe oudervermelding uit de akte zelf nog niet geraadpleegd."}
   ],
   "conflictQueue": [
     {"id":"hendrik-verbeek-name-retrojection","issue":"Latere genealogieën noemen Hendrik Gerritsen Verbeek, terwijl bekende primaire transcripties uit 1692 en 1717 de naam Verbeek niet gebruiken.","priority":"high"}
@@ -27,6 +27,8 @@
     {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"secondary genealogies","period":"ca. 1630-1680","result":"explicit-claim-unproven","detail":"Meerdere online genealogieën plaatsen Jenneke in gezin Dirk Formijn x Grietje van Opijnen; primaire bron niet zichtbaar en onafhankelijkheid onzeker."},
     {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"Bank van Tuil inv.nr. 1251 index","period":"1647-1653","result":"father-context-only","detail":"Dirk Formijn komt op meerdere folio's voor; index bewijst de ouder-kindrelatie niet."},
     {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"specialist literature discovery","period":"1982-1983","result":"high-value-source-identified-not-yet-inspected","detail":"CBG noemt H.A.P. van Gessel, Genealogie Formijn(e)/Formijne en 'Van hypothese naar bewijs' GN 38 (1983), p.57; NGV catalogus bevestigt Genealogie van het geslacht Formijne, signatuur B-111-FORM-01."},
-    {"claimId":"hendrik1794-parentage","sourceCategory":"Burgerlijke stand huwelijk Waardenburg","period":"1815","result":"confirmed-parentage","detail":"Akte nr. 1, 25 februari 1815: Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, zoon van Hendrik Verbeek en Clazina de Bruijn; Gelders Archief 0207, inv. 2720.05."}
+    {"claimId":"hendrik1794-parentage","sourceCategory":"Burgerlijke stand huwelijk Waardenburg","period":"1815","result":"confirmed-parentage","detail":"Akte nr. 1, 25 februari 1815: Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, zoon van Hendrik Verbeek en Clazina de Bruijn; Gelders Archief 0207, inv. 2720.05."},
+    {"claimId":"barend1826-parentage","sourceCategory":"secondary genealogy with archive citations","period":"1826-1876","result":"strong-indirect-parentage","detail":"Stamboom Middag noemt Barend (18-02-1826 Neerijnen; 10-09-1876 Heerewaarden) als kind van Hendrik Verbeek en Maria Magdalena van den Berg en verwijst naar Gelders Archief akte 6 (huwelijk 1864) en akte 36 (overlijden 1876)."},
+    {"claimId":"barend1826-parentage","sourceCategory":"Gelders Archief BS geboorte Heerewaarden","period":"1868","result":"identity-corroboration","detail":"Geboorteakte zoon Hendrik Verbeek, akte 10, 15-04-1868: vader Barend Verbeek, 42 jaar, arbeider; moeder Geertruida van Aalst. Bevestigt identiteit, leeftijdsrange, partner en wooncontext maar niet Barends ouders."}
   ]
 }
