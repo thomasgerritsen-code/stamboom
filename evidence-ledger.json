@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "updated": "2026-09-14",
+  "claims": [
+    {
+      "claimId": "surname-verbeek-hendrik1692",
+      "people": ["hendrik1692"],
+      "type": "identity/surname",
+      "claim": "Hendrik, gedoopt 2 oktober 1692 te Meteren, gebruikte zelf de familienaam Verbeek.",
+      "evidenceFor": [
+        {
+          "kind": "secondary",
+          "source": "Diverse latere online genealogieën",
+          "independence": "uncertain",
+          "weight": "low",
+          "note": "Noemen hem Hendrik Gerritsen Verbeek maar tonen voor deze naamvorm geen onafhankelijke primaire akte."
+        }
+      ],
+      "evidenceAgainstOrConflict": [
+        {
+          "kind": "archive-transcription",
+          "source": "Ons Voorgeslacht, trouwboek Meteren, inschrijving 14 maart 1717",
+          "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1829",
+          "weight": "high",
+          "note": "Bruidegom staat als Hendrik Geertsen, jongeman wonend Meteren; familienaam Verbeek ontbreekt."
+        },
+        {
+          "kind": "archive-transcription",
+          "source": "Doopinschrijving Meteren 2 oktober 1692 zoals eerder in het onderzoek vastgelegd",
+          "weight": "high",
+          "note": "Naamvorm is patroniem; geen aangetoond Verbeek-gebruik in deze inschrijving."
+        }
+      ],
+      "sourceIndependence": "De negatieve naamvormen komen uit twee verschillende levensgebeurtenissen; secundaire bomen kunnen onderling afgeleid zijn.",
+      "status": "CANDIDATE",
+      "missingEvidence": "Primaire akte waarin dezelfde Hendrik of aantoonbaar kind hem/haar als Verbeek identificeert.",
+      "bestNextSource": "DTB Meteren dopen 1717-1730 plus rechterlijke/boedel/transportstukken 1720-1755."
+    },
+    {
+      "claimId": "jenneke-dircks-formijne-parentage",
+      "people": ["gerrithendricksen17e"],
+      "type": "parent-child context",
+      "claim": "Jenneke Dircks, eerste vrouw van Gerrit Hendricksen, was dochter van Dirk Formijne van Ophemert.",
+      "evidenceFor": [
+        {
+          "kind": "official/secondary documentation",
+          "source": "CBG Familienamenbank documentatie Formijne",
+          "url": "https://www.cbgfamilienamen.nl/nfb/detail_naam.php?gba_naam=formijne&info=documentatie&nfd_naam=Formijne&operator=eq&taal=.",
+          "weight": "medium",
+          "note": "Bevestigt Dirk Formijne als schout van Ophemert in 1653 en de lokale familiecontext."
+        },
+        {
+          "kind": "archive-index",
+          "source": "Bank van Tuil inv.nr. 1251 (1647-1653) naamindex",
+          "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=2992",
+          "weight": "medium",
+          "note": "Dirk Formijn komt lokaal meermaals voor; index bewijst niet de ouder-kindrelatie."
+        }
+      ],
+      "evidenceAgainstOrConflict": [],
+      "sourceIndependence": "Lokale rechterlijke index en CBG-documentatie zijn verschillend, maar geen van beide noemt Jenneke expliciet als dochter.",
+      "status": "PROBABLE",
+      "missingEvidence": "Boedel-, erfdelings-, voogdij- of andere akte die Jenneke samen met Dirk Formijne of diens kinderen noemt.",
+      "bestNextSource": "Bank van Tuil/Ophemert rechterlijke en boedelstukken ca. 1650-1680."
+    }
+  ]
+}
