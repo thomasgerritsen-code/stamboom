@@ -2,6 +2,7 @@
 'use strict';
 const people=window.FAMILY_DATA?.people;
 if(!people)return;
+const merge=(id,patch)=>{if(!people[id])people[id]={};Object.assign(people[id],patch);};
 const addArchive=(id,item)=>{const p=people[id];if(!p)return;p.archive=p.archive||[];if(!p.archive.some(a=>a.title===item.title))p.archive.push(item);};
 const addEvent=(id,event)=>{const p=people[id];if(!p)return;p.events=p.events||[];if(!p.events.some(e=>String(e.year)===String(event.year)&&e.label===event.label))p.events.push(event);};
 
@@ -28,6 +29,36 @@ if(people[hendrik]){
   });
 }
 
+/* Kinderen rond Hendrik Geertsen en Heijltje Jans: bewijssterkte per persoon. */
+merge('jan1724verbeeklijn',{
+  name:'Jan (zoon van Hendrick Geertsen)',branch:'gerritsen',living:false,
+  birth:{date:'1724-11-19',year:1724,place:'Meteren'},parents:['hendrik1692','heijltjejans'],
+  generation:'Broers/zussen Peter Hendrikse Verbeek',occupations:[],places:['Meteren'],status:'confirmed',
+  events:[{year:1724,label:'Gedoopt op 19 november 1724 in Meteren als Jan, zoon van Hendrick Geertsen en Heijlken Jansen. In deze inschrijving staat geen achternaam Verbeek.',status:'confirmed'}],
+  archive:[{type:'document',title:'Doop Meteren – Jan (1724)',note:'De dooptranscriptie noemt expliciet Hendrick Geertsen en Heijlken Jansen als ouders. De familienaam Verbeek wordt niet vermeld.',url:'https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1828',status:'confirmed'}]
+});
+
+merge('gerrithendrikseverbeek1717',{
+  name:'Gerrit Hendrikse Verbeek',branch:'gerritsen',living:false,birth:{year:1717,place:'Meteren'},
+  parents:['hendrik1692','heijltjejans'],generation:'Broers/zussen Peter Hendrikse Verbeek',occupations:[],places:['Meteren'],status:'strong',
+  events:[{year:1747,label:'Op 19 november 1747 wordt hij in het Meterense doopboek als “Gerrit Hendrikse Verbeek” genoemd bij de doop van zoon Jan; moeder is Gijsbertje van Campen.',status:'confirmed'},{year:1754,label:'Gijsbertje van Campen/Kamoen, huisvrouw van Gerret Verbeek, treedt als doopgetuige op bij een kind van Geertje Verbeek en Tijmen van de Kop. Dit ondersteunt het bestaande familiecluster.',status:'strong'}],
+  archive:[{type:'document',title:'Doop Meteren 1747 – Gerrit Hendrikse Verbeek',note:'Expliciete vermelding van de naamvorm Gerrit Hendrikse Verbeek met Gijsbertje van Campen.',url:'https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1828',status:'confirmed'},{type:'source',title:'Ouderkoppeling aan Hendrik Geertsen × Heijltje Jans',note:'De ouderkoppeling is breed aanwezig in genealogische reconstructies en wordt ondersteund door patroniem, plaats en het onderlinge getuigenpatroon van de Verbeek-familiegroep. Een directe doop- of boedelakte voor Gerrit zelf is nog gewenst.',url:'https://www.genealogieonline.nl/stamboom-van-schaik-oskam-verbeek-werkhoven/I9146.php',status:'strong'}]
+});
+
+merge('aaltjehendriksverbeek1722',{
+  name:'Aaltje Hendriks Verbeek',branch:'gerritsen',living:false,birth:{year:1722,place:'Geldermalsen / Meteren-regio'},
+  parents:['hendrik1692','heijltjejans'],generation:'Broers/zussen Peter Hendrikse Verbeek',occupations:[],places:['Meteren'],status:'strong',
+  events:[{year:1751,label:'Aaltje Verbeek treedt als doopgetuige op bij Crijn, kind van Tijmen van de Kop en Geertje Verbeek.',status:'strong'},{year:1753,label:'Aaltje Verbeek is opnieuw doopgetuige bij een kind van Geertje Verbeek en Tijmen van de Kop.',status:'strong'},{year:1754,label:'Op 28 april 1754 trouwt zij in Meteren als “Aaltje Hendriks Verbeek”, jonge dochter geboren en wonend aldaar, met Klaas Jansen van Ooij.',status:'confirmed'}],
+  archive:[{type:'document',title:'Trouwboek Meteren – Aaltje Hendriks Verbeek (1754)',note:'Primaire/near-primary transcriptie noemt haar expliciet Aaltje Hendriks Verbeek, jonge dochter geboren en wonend te Meteren.',url:'https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1829',status:'confirmed'},{type:'source',title:'Ouderkoppeling Hendrik × Heijltje',note:'De koppeling aan Hendrik Gerritsen/Geertsen en Heijltje Jans is sterk secundair ondersteund; het patroniem Hendriks, de woonplaats en het getuigenpatroon passen, maar een expliciete doopakte met beide ouders is nog gewenst.',url:'https://www.genealogieonline.nl/stamboom-van-schaik-oskam-verbeek-werkhoven/I9150.php',status:'strong'}]
+});
+
+merge('geertjebeek1729',{
+  name:'Geertje Verbeek',branch:'gerritsen',living:false,birth:{year:1729,place:'Meteren'},death:{year:1794,place:'Meteren'},
+  parents:['hendrik1692','heijltjejans'],generation:'Broers/zussen Peter Hendrikse Verbeek',occupations:[],places:['Meteren'],status:'strong',
+  events:[{year:1751,label:'Trouwde op 30 mei 1751 in Meteren als “Geertje Verbeek”, jonge dochter geboren en wonend aldaar, met Tijmen van de Kop.',status:'confirmed'},{year:1751,label:'Bij de doop van haar zoon Crijn staat Aaltje Verbeek als getuige.',status:'strong'},{year:1754,label:'Bij de doop van zoon Hendrik staat Gijsbertje van Campen/Kamoen, huisvrouw van Gerret Verbeek, als getuige. Dit vormt een belangrijk familiecluster rond Geertje, Aaltje en Gerrit Verbeek.',status:'strong'}],
+  archive:[{type:'document',title:'Trouwboek Meteren – Geertje Verbeek (1751)',note:'Primaire/near-primary transcriptie noemt haar als Geertje Verbeek, jonge dochter geboren en wonend te Meteren.',url:'https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1829',status:'confirmed'},{type:'document',title:'Doopgetuigen in gezin Van de Kop–Verbeek',note:'Meterense dooptranscripties noemen Aaltje Verbeek als getuige in 1751 en 1753 en Gijsbertje, huisvrouw van Gerret Verbeek, in 1754. Dit ondersteunt de gereconstrueerde siblinggroep, zonder op zichzelf het ouderschap volledig te bewijzen.',url:'https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1828',status:'strong'}]
+});
+
 const peter='peterhendrikse1720';
 if(people[peter]){
   addArchive(peter,{
@@ -46,6 +77,18 @@ if(people[peter]){
     type:'source',
     title:'Naamvenster Verbeek in de directe familie: 1724–1747/1748',
     note:'Vader Hendrik wordt in 1717 en 1724 nog als Hendrik/Hendrick Geertsen geschreven. In november 1747 verschijnt een Gerrit Hendrikse Verbeek en in februari 1748 Peter Hendrikse Verbeek. Het vaste schriftelijke gebruik van Verbeek in deze generatie is daarmee uiterlijk 1747–1748 zichtbaar. Dit bewijst niet dat de naam toen pas ontstond.',
+    status:'strong'
+  });
+  addArchive(peter,{
+    type:'document',
+    title:'Hoge Bank van Deil – Peter Verbeek als erfgenaam via Corsje (1752)',
+    note:'Een transcriptie van Bank van Deil 1744–1757, folio 171, d.d. 7 maart 1752 noemt “Peter Verbeek en Corsje van der Burgh egtelieden” samen met de overige kinderen en erfgenamen van Sweer Lucasse van der Burgh en Corsje van Hees bij de overdracht van een huis, schuur en boomgaard onder Meteren. Dit bevestigt juridisch gebruik van Peters familienaam en zijn huwelijk met Corsje.',
+    url:'https://www.genealogieonline.nl/stamboom-gruwel-reesink/I27978.php',
+    status:'strong'
+  });
+  addEvent(peter,{
+    year:1752,
+    label:'In een transcriptie van een akte van de Hoge Bank van Deil (7 maart 1752, fol. 171) verschijnt hij als “Peter Verbeek” naast zijn vrouw Corsje van der Burgh in een erfgenamen-/transportakte.',
     status:'strong'
   });
 }
