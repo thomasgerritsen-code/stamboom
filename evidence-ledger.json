@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "updated": "2026-09-14",
+  "version": 6,
+  "updated": "2026-09-15",
   "claims": [
     {
       "claimId": "surname-verbeek-hendrik1692",
@@ -56,14 +56,14 @@
       "claim":"Barend Verbeek, geboren 18 februari 1826 te Neerijnen/Waardenburg en overleden 10 september 1876 te Heerewaarden, was een zoon van Hendrik Verbeek en Maria Magdalena van den Berg.",
       "evidenceFor":[
         {"kind":"secondary-genealogy-with-archive-citations","source":"N.S. Middag, Stamboom Middag, Barend Verbeek (1826-1876)","url":"https://www.genealogieonline.nl/stamboom-middag/I8307.php","independence":"secondary; archive citations explicit","weight":"medium","note":"Noemt Barend expliciet als kind van Hendrik Verbeek en Maria Magdalena van den Berg; vermeldt geboorte 18-02-1826 Neerijnen, huwelijk 02-04-1864 Varik, overlijden 10-09-1876 Heerewaarden en citeert Gelders Archief akte 6 en akte 36."},
-        {"kind":"secondary-genealogy","source":"Genealogie Pagina 1045 / Memelink","url":"https://www.stamboom.memelink.nl/dd_414.html","independence":"uncertain","weight":"low","note":"Plaats Barend, geboren 18-02-1826 Neerijnen, als kind van Hendrik Verbeek en Maria Magdalena van den Berg en geeft hetzelfde huwelijk met Geertruida van Aalst op 02-04-1864 te Varik."},
+        {"kind":"secondary-genealogy","source":"Genealogie Pagina 1045 / Memelink","url":"https://www.stamboom.memelink.nl/dd_414.html","independence":"uncertain","weight":"low","note":"Plaatst Barend, geboren 18-02-1826 Neerijnen, als kind van Hendrik Verbeek en Maria Magdalena van den Berg en geeft hetzelfde huwelijk met Geertruida van Aalst op 02-04-1864 te Varik."},
         {"kind":"civil-registration-index","source":"Gelders Archief, BS Geboorte Heerewaarden, archief 0207, inventaris 4259.19, akte 10","date":"1868-04-15","url":"https://permalink.geldersarchief.nl/B987A93D0DE34D89B81AAB370693DC64","independence":"primary-derived official index","weight":"medium","note":"Geboorte van zoon Hendrik Verbeek op 13-04-1868 noemt vader Barend Verbeek, 42 jaar, arbeider, en moeder Geertruida van Aalst. Dit bevestigt identiteit, leeftijdsrange, partner en Heerewaarden-context van dezelfde Barend, maar niet zijn ouderpaar."}
       ],
       "evidenceAgainstOrConflict":[],
-      "sourceIndependence":"De officiële 1868-akte is onafhankelijk en bevestigt de identiteit van Barend, maar de ouder-kindrelatie zelf rust vooralsnog op secundaire publicaties die mogelijk van dezelfde oudere bron zijn afgeleid. De verwijzingen naar Gelders Archief akten 6 en 36 maken de claim sterk controleerbaar maar zijn nog niet direct ingezien.",
-      "status":"PROBABLE",
+      "sourceIndependence":"De officiële 1868-akte is onafhankelijk en bevestigt de identiteit van Barend, maar de ouder-kindrelatie zelf rust vooralsnog op secundaire publicaties die mogelijk van dezelfde oudere bron zijn afgeleid. Twee gerichte webzoekrondes naar de genoemde officiële huwelijk-/overlijdensakte hebben geen direct raadpleegbare oudervermelding opgeleverd.",
+      "status":"BLOCKED",
       "missingEvidence":"Rechtstreekse officiële geboorte-, huwelijks- of overlijdensregistratie van Barend waarin Hendrik Verbeek en Maria Magdalena van den Berg als ouders worden genoemd.",
-      "bestNextSource":"Gelders Archief, Varik huwelijksakte nr. 6 van 2 april 1864; Heerewaarden overlijdensakte nr. 36 van 11 september 1876; of geboorte Waardenburg/Neerijnen 18 februari 1826."
+      "bestNextSource":"Hervat alleen bij nieuwe concrete toegang tot Gelders Archief Varik huwelijksakte nr. 6 van 2 april 1864, Heerewaarden overlijdensakte nr. 36 van 11 september 1876 of geboorte Waardenburg/Neerijnen 18 februari 1826."
     }
   ]
 }
