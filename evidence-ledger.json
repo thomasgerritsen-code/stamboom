@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "updated": "2026-09-14",
   "claims": [
     {
@@ -34,6 +34,20 @@
       "status":"BLOCKED",
       "missingEvidence":"Primaire verwantschapsakte, of een controleerbare bronverwijzing uit Van Gessels specialistische genealogie, die Jenneke expliciet samen met Dirk Formijne/Grietje van Opijnen of aantoonbare siblings noemt.",
       "bestNextSource":"H.A.P. van Gessel, Genealogie van het geslacht Formijne (NGV B-111-FORM-01) en 'Van hypothese naar bewijs', Genealogisch Nieuws 38 (1983), p.57; volg vandaar eventuele primaire Bank-van-Tuil/Ophemert-verwijzingen."
+    },
+    {
+      "claimId":"hendrik1794-parentage",
+      "people":["hendrik1794"],
+      "type":"parent-child",
+      "claim":"Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, was een zoon van Hendrik Verbeek en Clazina de Bruijn.",
+      "evidenceFor":[
+        {"kind":"civil-registration-index","source":"Gelders Archief, Burgerlijke stand Gelderland, dubbelen, Waardenburg, archief 0207, inventaris 2720.05, huwelijksakte nr. 1","date":"1815-02-25","url":"https://permalink.geldersarchief.nl/A25F0B510CE945469D9290AD09C62022","independence":"primary-derived official index","weight":"high","note":"Huwelijksinschrijving noemt bruidegom Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, met vader Hendrik Verbeek en moeder Clazina de Bruijn. De combinatie van exacte geboortedatum, plaats en ouderpaar maakt de generatielink expliciet."}
+      ],
+      "evidenceAgainstOrConflict":[],
+      "sourceIndependence":"De officiële burgerlijke-standregistratie is rechtstreeks gebaseerd op de huwelijksakte en is onafhankelijk van particuliere online stambomen.",
+      "status":"CONFIRMED",
+      "missingEvidence":"Geen essentieel bewijs meer nodig voor de ouder-kindclaim; de originele scan/huwelijksbijlagen kunnen de provenance nog verder versterken.",
+      "bestNextSource":"Waardenburg huwelijksbijlagen 1815, akte 1, voor eventuele doop-/geboorte-extracten en aanvullende identificatie."
     }
   ]
 }
