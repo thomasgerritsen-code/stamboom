@@ -1,13 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-14",
   "lessons": [
-    {
-      "id": "meteren-verbeek-early-name-search",
-      "scope": "Meteren/Ophemert, ca. 1690-1755, Verbeek line",
-      "lesson": "Exact-name web searches on later normalized surname forms produce mostly derivative family trees. Search primary DTB/rechterlijke series by patronymic and family cluster first, then test when the surname appears.",
-      "confidence": "high",
-      "use": "For Hendrik Geertsen and children, search Hendrik/Geertsen/Hendriksen plus spouse, children and witnesses; do not require Verbeek in the initial query."
-    }
+    {"id":"meteren-verbeek-early-name-search","scope":"Meteren/Ophemert, ca. 1690-1755, Verbeek line","lesson":"Exact-name web searches on later normalized surname forms produce mostly derivative family trees. Search primary DTB/rechterlijke series by patronymic and family cluster first, then test when the surname appears.","confidence":"high","use":"For Hendrik Geertsen and children, search Hendrik/Geertsen/Hendriksen plus spouse, children and witnesses; do not require Verbeek in the initial query."},
+    {"id":"ophemert-formijne-inheritance-cluster","scope":"Ophemert/Bank van Tuil, ca. 1655-1682, Formijne","lesson":"Secundaire bomen zijn opvallend consistent over Jenneke als dochter van Dirk Formijn maar tonen geen primaire bron. De hoogste informatiewaarde ligt daarom niet in meer naamzoekwerk maar in nalatenschaps-, erfdelings-, voogdij- en transportakten na Dirks overlijden en rond Grietje van Opijnens overlijden, gezocht via het volledige siblingcluster.","confidence":"high","use":"Zoek Dirk/Grietje én Steventje, Formijn, Jenneke, Jonas, Dirk, Lijneken, Claes en Cornelis samen in Bank van Tuil/Ophemert-registers; een erfgenamenlijst kan de hele generatielink in één keer toetsen."}
   ]
 }
