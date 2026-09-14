@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "updated": "2026-09-14",
   "claims": [
     {
@@ -23,16 +23,17 @@
       "type":"parent-child context",
       "claim":"Jenneke Dircks, eerste vrouw van Gerrit Hendricksen, was dochter van Dirk Formijne en Grietje Cornelis van Opijnen te Ophemert.",
       "evidenceFor":[
-        {"kind":"secondary-genealogy","source":"Stamboom Hermans, Dirk Formijn (ca. 1607-ca. 1655)","url":"https://www.genealogieonline.nl/stamboom-familie-hermans/I87.php","independence":"uncertain","weight":"low","note":"Noemt expliciet Jenneke Dirks Formijn (ca. 1630-ca. 1680) als kind van Dirk Formijn en Grietje van Opijnen, maar toont geen bronnen."},
+        {"kind":"secondary-genealogy","source":"Stamboom Hermans, Dirk Formijn (ca. 1607-ca. 1655)","url":"https://www.genealogieonline.nl/stamboom-familie-hermans/I87.php","independence":"uncertain","weight":"low","note":"Noemt expliciet Jenneke Dirks Formijn als kind van Dirk Formijn en Grietje van Opijnen, maar toont geen primaire bron."},
         {"kind":"secondary-genealogy","source":"StamboomNederland, gezin 9739","url":"https://www.stamboomnederland.nl/etalage/onno_de_ruiter_Project_van_onno_de_ruiter_129275/families194.html","independence":"uncertain","weight":"low","note":"Noemt eveneens Jenneke Dirks Formijne als kind van Dirck Formijne en Grietje Cornelis Opijnen; oorspronkelijke bron niet zichtbaar."},
-        {"kind":"official/secondary-documentation","source":"CBG Familienamenbank documentatie Formijne","url":"https://www.cbgfamilienamen.nl/nfb/detail_naam.php?gba_naam=formijne&info=documentatie&nfd_naam=Formijne&operator=eq&taal=.","independence":"partly-independent","weight":"medium","note":"Ondersteunt bestaan en lokale positie van Dirk Formijne als schout van Ophemert in 1653, niet de ouder-kindrelatie."},
-        {"kind":"archive-index","source":"Bank van Tuil inv.nr. 1251 (1647-1653) naamindex","url":"https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=2992","independence":"independent","weight":"medium","note":"Dirk Formijn komt lokaal meermaals voor; index bewijst niet de ouder-kindrelatie."}
+        {"kind":"official-literature-index","source":"CBG Nederlandse Familienamenbank, documentatie Formijne","url":"https://www.cbgfamilienamen.nl/nfb/detail_naam.php?gba_naam=formijne&info=documentatie&nfd_naam=Formijne&operator=eq&taal=.","independence":"independent","weight":"medium","note":"Verwijst naar H.A.P. van Gessel, Genealogie Formijn(e)/Formijne (1982) en 'Van hypothese naar bewijs', GN 38 (1983), p.57. Ondersteunt dat specialistisch brononderzoek naar deze familie bestaat, maar de tekst is nog niet gecontroleerd op Jenneke."},
+        {"kind":"library-catalog","source":"NGV Bibliotheek, Genealogie van het geslacht Formijne, H.A.P. van Gessel","url":"https://www.ngv.nl/bibliotheek/wp-content/uploads/2022/11/2022-16-nov-boeken.pdf","independence":"independent","weight":"medium","note":"Catalogus bevestigt aanwezigheid van de specialistische genealogie onder signatuur B-111-FORM-01; inhoud nog niet ingezien."},
+        {"kind":"archive-index","source":"Bank van Tuil inv.nr. 1251 (1647-1653) naamindex","url":"https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=2992","independence":"independent","weight":"medium","note":"Dirk Formijn komt lokaal meermaals voor, onder meer folio 19v, 70 en 78; index bewijst niet de ouder-kindrelatie."}
       ],
       "evidenceAgainstOrConflict":[],
-      "sourceIndependence":"Twee secundaire bomen geven dezelfde expliciete afstamming, maar hun onderlinge onafhankelijkheid is onbekend; de archiefindex bevestigt alleen de lokale Dirk Formijn. Daarom is de ouder-kindclaim nog niet PROBABLE.",
-      "status":"CANDIDATE",
-      "missingEvidence":"Boedel-, erfdelings-, voogdij-, transport- of andere primaire akte die Jenneke expliciet samen met Dirk Formijne/Grietje van Opijnen of aantoonbare siblings noemt.",
-      "bestNextSource":"Bank van Tuil/Ophemert rechterlijke en boedelstukken ca. 1655-1682, met extra aandacht voor nalatenschap Dirk Formijn en Grietje van Opijnen en de siblingcluster Steventje/Formijn/Jonas/Dirk/Lijneken/Claes/Cornelis."
+      "sourceIndependence":"De twee online bomen kunnen van elkaar of dezelfde oudere genealogie zijn afgeleid. CBG/NGV bevestigen onafhankelijk dat specialistische literatuur van H.A.P. van Gessel over Formijne bestaat, maar zolang die publicatie en haar primaire verwijzingen niet zijn gecontroleerd blijft de ouder-kindclaim onbewezen.",
+      "status":"BLOCKED",
+      "missingEvidence":"Primaire verwantschapsakte, of een controleerbare bronverwijzing uit Van Gessels specialistische genealogie, die Jenneke expliciet samen met Dirk Formijne/Grietje van Opijnen of aantoonbare siblings noemt.",
+      "bestNextSource":"H.A.P. van Gessel, Genealogie van het geslacht Formijne (NGV B-111-FORM-01) en 'Van hypothese naar bewijs', Genealogisch Nieuws 38 (1983), p.57; volg vandaar eventuele primaire Bank-van-Tuil/Ophemert-verwijzingen."
     }
   ]
 }
