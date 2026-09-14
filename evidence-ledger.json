@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "updated": "2026-09-15",
   "claims": [
     {
@@ -64,6 +64,20 @@
       "status":"BLOCKED",
       "missingEvidence":"Rechtstreekse officiële geboorte-, huwelijks- of overlijdensregistratie van Barend waarin Hendrik Verbeek en Maria Magdalena van den Berg als ouders worden genoemd.",
       "bestNextSource":"Hervat alleen bij nieuwe concrete toegang tot Gelders Archief Varik huwelijksakte nr. 6 van 2 april 1864, Heerewaarden overlijdensakte nr. 36 van 11 september 1876 of geboorte Waardenburg/Neerijnen 18 februari 1826."
+    },
+    {
+      "claimId":"jan1871-parentage",
+      "people":["jan1871","barend1826","geertruida-vanaalst1840"],
+      "type":"parent-child",
+      "claim":"Jan Verbeek (1871-1935) was een zoon van Barend Verbeek (1826-1876) en Geertruida van Aalst (1840-1916).",
+      "evidenceFor":[
+        {"kind":"burial-name-index","source":"Online-Begraafplaatsen, naamindex Verbeek","url":"https://www.online-begraafplaatsen.nl/naamindex/VERB","independence":"independent but identity-poor","weight":"low","note":"De index bevat een Jan Verbeek met levensduur 1871-1935, gelijk aan de onderzochte persoon, maar toont in de zichtbare index geen ouders, partner, geboorteplaats of overlijdensplaats. Dit ondersteunt alleen dat een gelijknamige persoon met deze levensduur bestaat, niet de ouder-kindrelatie."}
+      ],
+      "evidenceAgainstOrConflict":[],
+      "sourceIndependence":"De begraafplaatsindex is onafhankelijk van de bekende familiebomen maar bevat onvoldoende identiteitssleutels. De eerste gerichte zoekronde op Jan + ouderpaar + Heerewaarden/Varik leverde geen officiële oudervermelding op.",
+      "status":"CANDIDATE",
+      "missingEvidence":"Een official-derived geboorte-, huwelijks- of overlijdensakte van Jan die Barend Verbeek en Geertruida van Aalst als ouders vermeldt, plus voldoende identiteitssleutels om hem aan de Jan 1871-1935-lijn te koppelen.",
+      "bestNextSource":"Huwelijks- of overlijdensakte van Jan via partner/woonplaats/zoon Johann Anton Verbeek (1907-1972); gebruik de daaruit verkregen exacte geboortegegevens vervolgens voor de geboorteakte."
     }
   ]
 }
