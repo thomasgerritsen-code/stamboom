@@ -19,26 +19,33 @@ if(people[hendrik]){
     label:'Bij de doop van zoon Jan staat hij opnieuw als “Hendrick Geertsen”, zonder de familienaam Verbeek. De naam Verbeek wordt in de tot nu toe gevonden directe bronnen pas bij de volgende generatie expliciet zichtbaar.',
     status:'confirmed'
   });
+  addArchive(hendrik,{
+    type:'source',
+    title:'1747: familienaam verschijnt bij een Hendrikse Verbeek',
+    note:'Het Meterense doopboek noemt op 19 november 1747 een “Gerrit Hendrikse Verbeek” als vader van Jan, met Gijsbertje van Campen als moeder. Secundaire genealogieën plaatsen deze Gerrit als zoon van Hendrik Gerritsen/Geertsen en Heijltje Jans. De naamvorm is primair/near-primary bevestigd, maar de ouderkoppeling wordt nog niet als hard feit toegevoegd zonder een expliciete doop-, huwelijks- of boedelakte.',
+    url:'https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1828',
+    status:'strong'
+  });
 }
 
 const peter='peterhendrikse1720';
 if(people[peter]){
   addArchive(peter,{
     type:'document',
-    title:'1748: eerste harde Verbeek-vermelding in de directe lijn',
-    note:'Het Meterense trouwregister noemt op 4 februari 1748 expliciet “Peter Hendrikse Verbeek” bij zijn huwelijk met Corsje Zweer van der Borg. Dit is momenteel het vroegste primaire/near-primary document waarin de familienaam Verbeek ondubbelzinnig in de bewezen directe lijn voorkomt.',
+    title:'1748: Peter heet expliciet Hendrikse Verbeek',
+    note:'Het Meterense trouwregister noemt op 4 februari 1748 expliciet “Peter Hendrikse Verbeek” bij zijn huwelijk met Corsje Zweer van der Borg. Dit is een ondubbelzinnige primaire/near-primary Verbeek-vermelding in de bewezen directe lijn.',
     url:'https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1829',
     status:'confirmed'
   });
   addEvent(peter,{
     year:1748,
-    label:'Op 4 februari 1748 trouwde hij als “Peter Hendrikse Verbeek” met Corsje Zweer van der Borg. Dit is tot nu toe de eerste ondubbelzinnige primaire/near-primary Verbeek-vermelding in de directe lijn.',
+    label:'Op 4 februari 1748 trouwde hij als “Peter Hendrikse Verbeek” met Corsje Zweer van der Borg. Daarmee is de familienaam Verbeek in deze generatie ondubbelzinnig schriftelijk aangetoond.',
     status:'confirmed'
   });
   addArchive(peter,{
     type:'source',
-    title:'Naamvenster Verbeek in de directe lijn: 1724–1748',
-    note:'Vader Hendrik wordt in 1717 en 1724 nog als Hendrik/Hendrick Geertsen geschreven, terwijl zoon Peter in 1748 expliciet Peter Hendrikse Verbeek heet. Daarmee ligt het eerste nu aantoonbare vaste gebruik van de familienaam in deze directe huishoudens ergens vóór of uiterlijk in 1748; dit zegt nog niet dat de naam precies in dat tijdvak is ontstaan.',
+    title:'Naamvenster Verbeek in de directe familie: 1724–1747/1748',
+    note:'Vader Hendrik wordt in 1717 en 1724 nog als Hendrik/Hendrick Geertsen geschreven. In november 1747 verschijnt een Gerrit Hendrikse Verbeek en in februari 1748 Peter Hendrikse Verbeek. Het vaste schriftelijke gebruik van Verbeek in deze generatie is daarmee uiterlijk 1747–1748 zichtbaar. Dit bewijst niet dat de naam toen pas ontstond.',
     status:'strong'
   });
 }
