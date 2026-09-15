@@ -1,0 +1,50 @@
+{
+  "subject": "Johannes Makkinga (1895)",
+  "updated": "2026-09-15",
+  "focus": "Biografische reconstructie van woonplaatsen en spoorwegloopbaan",
+  "claims": [
+    {
+      "id": "jm1895-marriage-1921",
+      "claim": "Johannes Makkinga trouwde 9 april 1921 te Enschede met Everijntje Schoonderbeek; hij was 25, geboren Stad Ommen, zoon van Gerrit Makkinga en Hendrina Pasman.",
+      "status": "CONFIRMED",
+      "source": "Historisch Centrum Overijssel/Collectie Overijssel, BS Huwelijk Enschede, toegang 123, inventaris 03729, akte 84, 09-04-1921; gegevens zichtbaar via Genlias-transcriptie in Genealogie Online.",
+      "url": "https://www.genealogieonline.nl/stamboom-de-duffelt/I41638.php"
+    },
+    {
+      "id": "jm1895-ns-assistant-pijnacker-1934",
+      "claim": "Johannes wordt voor 1934 in een lokale reconstructie van de Stationsstraat te Pijnacker aangeduid als assistent bij de N.S.",
+      "status": "PROBABLE",
+      "source": "Pijnacker in vroeger tijden, Stationsstraat; lokale historische reconstructie, geen originele personeelskaart getoond.",
+      "url": "https://sites.google.com/view/pijnacker-in-vroeger-tijden/stationsstraat"
+    },
+    {
+      "id": "jm1895-migration-cluster-1922-1934",
+      "claim": "Lokale reconstructie plaatst kinderen van Johannes en Everijntje in Enschede (1922, 1924), Sint Annaparochie (1927) en Pijnacker (1934); Johannes zou medio juli 1934 vanuit Borculo naar Pijnacker zijn gekomen en Everijntje vanuit Wolvega.",
+      "status": "CANDIDATE",
+      "source": "Pijnacker in vroeger tijden, Stationsstraat; te verifiëren met bevolkingsregisters/gezinskaarten en geboorteakten.",
+      "url": "https://sites.google.com/view/pijnacker-in-vroeger-tijden/stationsstraat"
+    }
+  ],
+  "working_timeline": [
+    {"date":"1921-04-09","place":"Enschede","event":"huwelijk","status":"CONFIRMED"},
+    {"date":"1922-03-02","place":"Enschede","event":"geboorte zoon Gerrit volgens lokale reconstructie","status":"CANDIDATE"},
+    {"date":"1924-01-07","place":"Enschede","event":"geboorte dochter Aaltje volgens lokale reconstructie","status":"CANDIDATE"},
+    {"date":"1927-05-02","place":"Sint Annaparochie","event":"geboorte zoon Henri volgens lokale reconstructie","status":"CANDIDATE"},
+    {"date":"1934-07","place":"Pijnacker","event":"komst naar Pijnacker; Johannes volgens bron vanuit Borculo, Everijntje vanuit Wolvega","status":"CANDIDATE"},
+    {"date":"1934-09-07","place":"Pijnacker","event":"geboorte zoon Hendrikus volgens lokale reconstructie","status":"CANDIDATE"}
+  ],
+  "conflicts": [
+    "Lokale Pijnacker-bron geeft Everijntjes geboortedatum als 19-05-1895; een genealogische publicatie van Historische Vereniging Hardenberg en Omgeving noemt 09-05-1895 en verwijst naar BS Veenendaal akte 85. Originele/official-derived geboorteakte controleren voordat datum wordt gepubliceerd.",
+    "Verhuizingen mogen nog niet automatisch aan NS-standplaatsen worden gelijkgesteld; daarvoor is personeels- of bevolkingsregisterbewijs nodig."
+  ],
+  "searchCoverage": [
+    "Exacte webzoekopdrachten Johannes Makkinga + Nederlandse Spoorwegen/NS/Pijnacker/Borculo/Sint Annaparochie/Enschede uitgevoerd 2026-09-15.",
+    "Geen openbaar geïndexeerde NS-personeelskaart of personeelsdossier van Johannes Makkinga aangetroffen in deze run."
+  ],
+  "bestNextSources": [
+    "Utrechts Archief / spoorwegpersoneelsarchieven: personeelskaart Johannes Makkinga, geb. 02-10-1895 Stad Ommen.",
+    "Bevolkingsregisters/gezinskaarten Enschede, Het Bildt/Sint Annaparochie, Borculo, Wolvega en Pijnacker om aankomst/vertrek, adres, beroep en gezin samen te reconstrueren.",
+    "Geboorteakten kinderen als onafhankelijke ankerpunten voor woon-/werkchronologie."
+  ],
+  "publicationRule": "Alleen CONFIRMED feiten zonder onzekerheidsmarkering op de publieke stamboom; NS-functie en migratiecluster nog niet als vaststaand verhaal publiceren."
+}
