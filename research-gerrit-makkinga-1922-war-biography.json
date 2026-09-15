@@ -1,0 +1,91 @@
+{
+  "person": {
+    "name": "Gerrit Makkinga",
+    "birth": "1922-03-02",
+    "birthPlace": "Enschede",
+    "relationshipContext": "son of Johannes Makkinga and Everijntje Schoonderbeek; direct family line"
+  },
+  "researchFocus": "wartime compulsory labour and postwar registration/repatriation",
+  "claims": [
+    {
+      "claim": "An Arolsen Archives DP3/Central Name Index record exists for Gerrit Makkinga and is linked on the Arolsen forum to the civil registration of Gerrit Makkinga born 2 March 1922 in Enschede.",
+      "status": "CONFIRMED",
+      "source": {
+        "institution": "Arolsen Archives",
+        "collection": "DP3 of CNI - Central Name Index",
+        "documentId": "39648882a",
+        "url": "https://talk.arolsen-archives.org/t/gerrit-makkinga-dutch/29155"
+      }
+    },
+    {
+      "claim": "The surviving A.E.F. Assembly Center Registration Card names Makkinga, Gerrit, gives claimed nationality as Dutch, sex male, age 23, and destination Rotterdam, Zuid Holland, Nederland.",
+      "status": "CONFIRMED",
+      "source": {
+        "institution": "Arolsen Archives",
+        "documentId": "39648882a",
+        "type": "A.E.F. Assembly Center Registration Card",
+        "url": "https://talk.arolsen-archives.org/t/gerrit-makkinga-dutch/29155"
+      }
+    },
+    {
+      "claim": "The card appears to record an arrival date of 26 May 1945.",
+      "status": "PROBABLE",
+      "reason": "handwritten date is legible as 26/5/45 but should be checked against a higher-resolution/original archival scan before public presentation as fact",
+      "source": {
+        "institution": "Arolsen Archives",
+        "documentId": "39648882a"
+      }
+    },
+    {
+      "claim": "The remarks field appears to read 'Verpflichtete arbeider', indicating compulsory/obligated labour status.",
+      "status": "PROBABLE",
+      "reason": "handwritten wording is strongly suggestive but transcription should be independently checked against the archival image/metadata",
+      "source": {
+        "institution": "Arolsen Archives",
+        "documentId": "39648882a"
+      }
+    },
+    {
+      "claim": "Gerrit worked during the Second World War at a shipyard while staying in a camp near Klosterneuburg/Korneuburg.",
+      "status": "PROBABLE",
+      "evidenceType": "first-generation oral family testimony",
+      "note": "Reported by Gerrit's daughter. This is strong family testimony but the exact yard, camp, dates and job remain to be corroborated with person-specific archival records."
+    },
+    {
+      "claim": "The shipyard in the family testimony was Schiffswerft Korneuburg.",
+      "status": "CANDIDATE",
+      "reason": "historical context fits strongly (shipyard, camp, Dutch workers, proximity to Klosterneuburg), but no person-specific Korneuburg record for Gerrit has yet been found"
+    }
+  ],
+  "chronology": [
+    {
+      "date": "1922-03-02",
+      "place": "Enschede",
+      "event": "birth",
+      "status": "CONFIRMED"
+    },
+    {
+      "period": "Second World War",
+      "place": "near Klosterneuburg/Korneuburg, Austria",
+      "event": "shipyard work and camp stay according to his daughter",
+      "status": "PROBABLE"
+    },
+    {
+      "date": "1945-05-26",
+      "event": "apparent arrival/registration on A.E.F. Assembly Center card",
+      "destination": "Rotterdam, Zuid Holland, Nederland",
+      "status": "PROBABLE"
+    }
+  ],
+  "openQuestions": [
+    "Which exact shipyard and employer employed Gerrit?",
+    "Can Gerrit be found in a Korneuburg worker, transport, wage, camp or personnel list?",
+    "What was his occupation/department at the yard?",
+    "What were his arrival and departure dates in Austria?",
+    "What assembly/reception centre issued the 1945 card and what route did he take home?"
+  ],
+  "negativeSearch": [
+    "General web searches for Gerrit Makkinga + Korneuburg/Klosterneuburg/shipyard have not yet produced a person-specific Korneuburg record."
+  ],
+  "publicationPolicy": "Do not publish Korneuburg as a documentarily confirmed personal workplace until a person-specific source is found. Oral testimony should be labelled as such."
+}
