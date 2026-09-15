@@ -1,0 +1,41 @@
+{
+  "researchQuestion": "Kan Hendrik Peters/Petersen Verbeek (ca. 1750-1798) via broer Zweere en het gezin Peter Verbeek × Corsje Zweere van der Burch aan zijn veronderstelde ouders worden gekoppeld?",
+  "date": "2026-09-15",
+  "status": "PROBABLE",
+  "newEvidence": [
+    {
+      "type": "church-register-transcription",
+      "source": "Ons Voorgeslacht, Dopen Meteren (NG) 1664-1771",
+      "date": "1753-03-11",
+      "childLiteral": "Zweere",
+      "fatherLiteral": "Peter Verbeek",
+      "motherLiteral": "Corsje Zweere van der Burch",
+      "witnessLiteral": "Belia van der Burch",
+      "noteLiteralSummary": "Het huis hoorde eigenlijk onder Geldermalsen; het kind werd wegens nabijheid in Meteren gedoopt.",
+      "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1828",
+      "assessment": "Sterk onafhankelijk bewijs dat Peter Verbeek en Corsje Zweere van der Burch in 1753 samen een zoon Zweere hadden en in/onder Geldermalsen woonden. Het noemt Hendrik niet en bewijst zijn parentage daarom niet rechtstreeks."
+    },
+    {
+      "type": "church-register-transcription",
+      "source": "Ons Voorgeslacht, Dopen Meteren (NG) 1664-1771",
+      "date": "1757-01-23",
+      "childLiteral": "Anneke",
+      "fatherLiteral": "Peter Verbeek",
+      "motherLiteral": "Lena Verburg",
+      "noteLiteralSummary": "Woonachtig Geldermalsen; wegens strenge koude in Meteren gedoopt.",
+      "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1828",
+      "assessment": "Bevestigt dat een Peter Verbeek in dezelfde locality in 1757 met Lena Verburg een kind had. Dit is consistent met de secundair gereconstrueerde tweede relatie, maar bewijst zonder huwelijk/boedelstuk niet zelfstandig dat dit exact dezelfde Peter is."
+    }
+  ],
+  "negativeEvidence": [
+    {
+      "collection": "Ons Voorgeslacht, Dopen Meteren (NG) 1664-1771",
+      "periodChecked": "1748-1751 in de geraadpleegde transcriptie",
+      "result": "Geen doop van een Hendrik als zoon van Peter Verbeek en Corsje gevonden in dit gedeelte.",
+      "interpretation": "Niet beslissend: de 1753-inschrijving zegt expliciet dat het gezin feitelijk onder Geldermalsen woonde, zodat Hendriks doop rond 1750 in een andere kerkelijke registratie kan staan."
+    }
+  ],
+  "reasoning": "De 1753-doop maakt het eerder alleen secundair bekende vroege gezin Peter × Corsje aantoonbaar historisch en bevestigt bovendien de vermeende broer Zweere. Gecombineerd met Hendriks latere patroniem Petersen en meerdere secundaire genealogieën die Hendrik en Zweere als zonen van dit paar plaatsen, is de parentage nu sterk indirect ondersteund. Een bron die Hendrik zelf noemt blijft echter ontbreken.",
+  "bestNextSource": "Geldermalsen doopregister circa 1748-1751, daarna trouw/boedel/voogdijstukken van Peter Verbeek × Corsje Zweere van der Burch; zoek expliciet naar Hendrik én Zweere.",
+  "publicationDecision": "Niet als onbeperkt CONFIRMED feit publiceren; status PROBABLE expliciet behouden totdat Hendrik zelf in een primaire of official-derived verwantschapsbron staat."
+}
