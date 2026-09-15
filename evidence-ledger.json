@@ -1,7 +1,24 @@
 {
-  "version": 9,
+  "version": 10,
   "updated": "2026-09-15",
   "claims": [
+    {
+      "claimId": "hendrik1750-parentage",
+      "people": ["hendrik1750","peter-hendrikse-verbeek1720","corsje-zweers-vanderburg1725"],
+      "type": "parent-child",
+      "claim": "Hendrik Peters/Petersen Verbeek (ca. 1750-1798) was een zoon van Peter Hendrikse Verbeek en Corsje Zweers van der Burg.",
+      "evidenceFor": [
+        {"kind":"secondary-genealogy","source":"Andre van Schaik, Stamboom van Schaik, Oskam, Verbeek, Werkhoven en Spithoven","url":"https://www.genealogieonline.nl/stamboom-van-schaik-oskam-verbeek-werkhoven/I9179.php","independence":"publication-independent, underlying-data-independence-unknown","weight":"low","note":"Noemt Hendrik Peters Verbeek 1750-1798 als zoon van Peter Hendrikse Verbeek 1720-1798 en Corsje (Zweers) van der Burg 1725-1755; pagina toont voor deze parentage geen bronnen."},
+        {"kind":"secondary-genealogy","source":"Aad Hoek, Stamboom Hoek, van Scherpenzeel, la Verge en van de Water","url":"https://www.genealogieonline.nl/stamboom-hoek/I1077684187.php","independence":"separate author/publication, underlying-data-independence-unknown","weight":"low","note":"Noemt eveneens Hendrik Verbeek ca.1750 als kind van Peter Hendrikse Verbeek en Corsje Zweers van der Burg; geen primaire bron zichtbaar."},
+        {"kind":"secondary-FAN-cluster","source":"Geneanet, stamboom Guus van Gameren, Corstje Verbeek","url":"https://gw.geneanet.org/vanwijnen28?lang=en&n=verbeek&p=corstje","independence":"uncertain","weight":"low","note":"Plaats Hendrik Peterse Verbeek 1750-1798 en Zweer Verbeek 1753 als kinderen van Peter × Corsje en als halfbroers/-zussen van Peters latere kinderen met Helena Verburg; bruikbaar als FAN-spoor."},
+        {"kind":"church-register-transcription","source":"HGWBB/NGV, Doopboek Meteren 1772-1947, doop Peter 13 februari 1791","date":"1791-02-13","url":"https://www.ngv-afdelingen.nl/bet/wp-content/uploads/2023/01/10-Doopboek-Meteren-1772-1947.pdf","independence":"archive transcription","weight":"medium","note":"Bevestigt dat de latere vader daadwerkelijk Hendrik Petersen Verbeek werd genoemd; ondersteunt patroniem Peter maar identificeert niet welke Peter zijn vader was."}
+      ],
+      "evidenceAgainstOrConflict": [],
+      "sourceIndependence": "Twee verschillende auteurs publiceren hetzelfde ouderpaar en een derde boom hetzelfde FAN/half-siblingcluster, maar gedeelde onderliggende genealogische data zijn mogelijk. De 1791-kerktranscriptie is onafhankelijk en bewijst alleen de patroniemvorm Petersen, niet het ouderpaar.",
+      "status": "CANDIDATE",
+      "missingEvidence": "Primaire doop-, huwelijks-, boedel- of voogdijbron die Hendrik expliciet als kind/erfgenaam van Peter Hendrikse Verbeek en Corsje Zweers van der Burg noemt.",
+      "bestNextSource": "Meteren/Geldermalsen DTB vóór 1772; boedel-/voogdijstukken rond Corsjes vermoedelijke overlijden ca.1755, zoek ook op broer Zweer ca.1753."
+    },
     {
       "claimId": "surname-verbeek-hendrik1692",
       "people": ["hendrik1692"],
