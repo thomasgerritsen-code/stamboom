@@ -1,0 +1,40 @@
+{
+  "claimId": "hendrik1750-parentage",
+  "updated": "2026-09-15",
+  "question": "Kan de doopgetuige Anneke Verbeek in 1780 de herkomst van Hendrik Peters/Petersen Verbeek verder onderbouwen?",
+  "evidence": [
+    {
+      "kind": "church-register-transcription",
+      "source": "HGWBB/NGV, Doopboek Meteren 1772-1947",
+      "date": "1780-12-24",
+      "url": "https://www.ngv-afdelingen.nl/bet/wp-content/uploads/2023/01/10-Doopboek-Meteren-1772-1947.pdf",
+      "fact": "Korsje, geboren 20 december 1780 en gedoopt 24 december 1780, dochter van Hendrik Verbeek en Klazina de Bruin; getuige Anneke Verbeek.",
+      "weight": "medium",
+      "proves": "Anneke Verbeek behoorde aantoonbaar tot het doop/FAN-netwerk van Hendrik en Klazina; de precieze verwantschap wordt niet vermeld."
+    },
+    {
+      "kind": "secondary-FAN-hypothesis",
+      "source": "Geneanet, stamboom Guus van Gameren, Corstje Verbeek",
+      "url": "https://gw.geneanet.org/vanwijnen28?lang=en&n=verbeek&p=corstje",
+      "fact": "Publicatie plaatst Anneke Verbeek (1758-1823) onder de kinderen van Peter Hendrikse Verbeek en Helena/Leena Verburg en Hendrik Peterse Verbeek (1750-1798) als halfbroer uit Peter × Corsje.",
+      "weight": "low",
+      "proves": "Alleen een onderzoekshypothese voor de identiteit van getuige Anneke; geen primaire verwantschapsbron."
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "Een andere secundaire publicatie geeft Anneke als geboren 1750 en kind van Peter Verbeek × Leena van de Burgh. Dat kan niet zonder nadere verklaring samengaan met de kerkelijke trouwtranscriptie waarin Peter pas in februari 1756 met Leena trouwt nadat hij weduwnaar van Corsje is geworden.",
+      "status": "unresolved",
+      "handling": "Gebruik Anneke niet als bewezen halfzus totdat haar eigen doop/overlijdens- of huwelijksbron haar ouders vastlegt."
+    }
+  ],
+  "conclusion": {
+    "status": "PROBABLE",
+    "note": "De 1780-getuige versterkt het FAN-netwerk maar bewijst Hendriks ouderpaar niet rechtstreeks. Bestaande parentage-status blijft PROBABLE."
+  },
+  "coverage": {
+    "checked": ["Meteren NG dooptranscriptie 1780", "gerichte webzoeking Anneke Verbeek + Peter/Leena"],
+    "notYetChecked": ["Anneke Verbeeks eigen primaire doopinschrijving ca. 1757-1758", "Anneke Verbeeks huwelijksinschrijving met Willem van Soelen", "overlijdensakte Anneke Verbeek 1823"]
+  },
+  "bestNextSource": "Zoek Anneke Verbeeks primaire/official-derived doop ca. 1757-1758 of haar overlijdensakte 1823 om haar ouders vast te leggen; gebruik haar daarna pas als collateral bewijs voor Hendrik."
+}
