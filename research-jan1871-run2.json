@@ -1,0 +1,27 @@
+{
+  "updated": "2026-09-15",
+  "claimId": "jan1871-parentage",
+  "question": "Kan Jan Verbeek (1871-1935) via partner Johanna Catharina Berends en zoon Johann Anton Verbeek (1907-1972) aan een officiële akte worden gekoppeld die zijn ouders identificeert?",
+  "importance": "Directe Verbeek-lijn; dit is de tweede gerichte route naar een officiële ouder-kindbevestiging.",
+  "routesChecked": [
+    {
+      "route": "Jan Verbeek + Johanna Catharina Berends",
+      "result": "Geen rechtstreeks raadpleegbare officiële burgerlijke-standakte gevonden. Een secundaire Genealogie Online-publicatie noemt Jan Verbeek (1871-1935) als partner van Johanna Catharina Berends (1868-1939) en noemt vier kinderen: Theodor (1903), Anna Maria Margareta (1904-1980), Johann Anton (1907-1972) en Johanna Geertruida (1910-1997).",
+      "source": "https://www.genealogieonline.nl/stamboom-van-schaik-oskam-verbeek-werkhoven/I9215.php",
+      "quality": "secondary",
+      "independence": "uncertain"
+    },
+    {
+      "route": "Johann Anton Verbeek 1907-1972",
+      "result": "Online-Begraafplaatsen bevestigt alleen het voorkomen van een Johann Anton Verbeek (1907-1972) in de naamindex; de zichtbare index bevat geen ouders of andere voldoende identificerende familiegegevens.",
+      "source": "https://www.online-begraafplaatsen.nl/naamindex/VERB",
+      "quality": "independent index, identity-poor"
+    }
+  ],
+  "status": "BLOCKED",
+  "reason": "Twee goed gekozen gerichte runs hebben geen officiële oudervermelding van Jan opgeleverd. Verdere herhaling van dezelfde webzoekroute heeft een hoog herhalingsrisico.",
+  "publicTreeChange": false,
+  "missingEvidence": "Een officiële geboorte-, huwelijks- of overlijdensakte van Jan Verbeek waarin Barend Verbeek en Geertruida van Aalst als ouders staan, met voldoende identiteitssleutels voor Jan 1871-1935.",
+  "resumeCondition": "Alleen hervatten bij een nieuwe concrete akte-index, exacte geboorteplaats/-datum, huwelijksplaats/-datum of andere onafhankelijke primaire aanwijzing.",
+  "nextHighValueClaim": "Schakel volgens dead-end escape naar een andere onbevestigde directe-lijnclaim of een FAN-route met nieuwe broncategorie."
+}
