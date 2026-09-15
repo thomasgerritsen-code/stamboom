@@ -1,39 +1,35 @@
 {
-  "version": 8,
+  "version": 9,
   "updated": "2026-09-15",
   "activeQuestion": {
-    "id": "jan1871-parentage",
-    "question": "Kan de ouder-kindrelatie Jan Verbeek (1871-1935) → Barend Verbeek (1826-1876) en Geertruida van Aalst (1840-1916) rechtstreeks uit de burgerlijke stand worden bevestigd?",
-    "importance": "Directe Verbeek-lijn; een officiële geboorte-, huwelijks- of overlijdensakte kan deze generatielink efficiënt en onafhankelijk bevestigen.",
-    "status": "BLOCKED",
-    "lastAction": "Na eerdere zoekrondes is opnieuw gericht gezocht via Jan Verbeek, partnerkandidaat Johanna Catharina Berends en zoon Johann Anton Verbeek (1907-1972). De enige nieuwe gezinscontext blijft een secundaire Genealogie Online-publicatie; geen officiële akte met Jans ouders werd gevonden. De begraafplaatsindex bevestigt alleen dat een Jan Verbeek 1871-1935 bestaat.",
-    "missingEvidence": "Een official-derived geboorte-, huwelijks- of overlijdensregistratie van Jan Verbeek waarin Barend Verbeek en Geertruida van Aalst expliciet als ouders worden genoemd, plus voldoende gegevens om de Jan 1871-1935-identiteit vast te zetten.",
-    "bestNextSource": "Hervat alleen bij een nieuwe concrete akte-index, exacte geboorte-/huwelijksplaats of andere primaire aanwijzing; schakel intussen naar een andere hoogwaardige directe-lijnclaim.",
-    "stopCriterion": "Stop zodra één officiële akte Jan expliciet aan Barend Verbeek en Geertruida van Aalst koppelt en identiteit/chronologie overeenkomen."
+    "id": "hendrik1750-parentage",
+    "question": "Kan Hendrik Peters/Petersen Verbeek (ca. 1750-1798) rechtstreeks aan Peter Hendrikse Verbeek en Corsje Zweers van der Burg worden gekoppeld?",
+    "importance": "Directe Verbeek-lijn; dit is een nog niet in de claim-ledger bewezen 18e-eeuwse generatielink tussen de CONFIRMED 1794-generatie en Peter Hendrikse Verbeek.",
+    "status": "CANDIDATE",
+    "lastAction": "NGV/HGWBB-transcriptie van het Doopboek Meteren 1772-1947 gecontroleerd. De doop van zoon Peter op 13 februari 1791 noemt de vader expliciet 'Hendrik Petersen Verbeek' en Klazina de Bruin; de doop van Hendrik op 16 maart 1794 noemt Hendrik Verbeek en Clazina de Bruin. Dit bevestigt de historische patroniem+familienaamvorm van de vader en levert een onafhankelijke kerkelijke cross-check van de reeds CONFIRMED 1794-parentage, maar bewijst Hendriks eigen ouders nog niet.",
+    "missingEvidence": "Een doop-, huwelijks-, boedel- of andere primaire/official-derived bron die Hendrik Peters/Petersen Verbeek zelf expliciet koppelt aan Peter Hendrikse Verbeek en Corsje Zweers van der Burg.",
+    "bestNextSource": "Meteren/Geldermalsen DTB rond 1748-1751 en huwelijk Hendrik Verbeek × Klazina de Bruin op/omstreeks 27 februari 1779; controleer ook huwelijksinschrijving/-bijlagen indien beschikbaar.",
+    "stopCriterion": "Stop zodra een betrouwbare primaire of official-derived bron Hendrik expliciet aan Peter Hendrikse Verbeek en Corsje Zweers van der Burg koppelt, met passende identiteit en chronologie."
   },
   "openClaims": [
     {"id":"link-gerrit-hendricksen-to-hendrik-1692","priority":"high","status":"CONFIRMED","note":"Dooptranscriptie 2 oktober 1692 koppelt Hendrik aan Gerrit en Lijsken; familienaam Verbeek staat daar niet als bewezen naamvorm."},
     {"id":"surname-verbeek-hendrik1692","priority":"high","status":"BLOCKED","note":"Doop 1692 en huwelijk 14 maart 1717 gebruiken patroniem/naamvorm zonder Verbeek; hervatten bij nieuwe concrete primaire aanwijzing."},
     {"id":"jenneke-dircks-formijne-parentage","priority":"high","status":"BLOCKED","note":"Secundaire bomen noemen Jenneke als dochter van Dirk Formijn en Grietje van Opijnen; primaire bevestiging ontbreekt. Van-Gessel-publicatie blijft de eerstvolgende gerichte bronroute."},
-    {"id":"hendrik1794-parentage","priority":"high","status":"CONFIRMED","note":"Waardenburg huwelijksakte nr. 1 van 25 februari 1815 noemt Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, zoon van Hendrik Verbeek en Clazina de Bruijn."},
-    {"id":"barend1826-parentage","priority":"high","status":"BLOCKED","note":"Twee gerichte runs leverden geen direct raadpleegbare officiële oudervermelding op. Secundaire bronnen plus officiële 1868-identiteitscontrole ondersteunen de hypothese sterk, maar niet genoeg voor CONFIRMED. Hervatten zodra Varik akte 6 (1864), Heerewaarden akte 36 (1876) of geboorteakte 1826 direct raadpleegbaar is."},
-    {"id":"jan1871-parentage","priority":"high","status":"BLOCKED","note":"Herhaalde gerichte zoekroutes via ouderpaar, plaatscontext en partner/kindcluster leverden geen officiële oudervermelding op. Alleen secundaire gezinscontext en een identiteit-arme begraafplaatsindex zijn gevonden; hervatten bij nieuwe primaire aanwijzing."}
+    {"id":"hendrik1750-parentage","priority":"high","status":"CANDIDATE","note":"Nieuwe kerkregistertranscriptie bewijst dat de vader in het gezin met Klazina de Bruin in 1791 'Hendrik Petersen Verbeek' werd genoemd, maar zijn eigen ouderpaar Peter Hendrikse Verbeek × Corsje Zweers van der Burg is nog niet primair bevestigd."},
+    {"id":"hendrik1794-parentage","priority":"high","status":"CONFIRMED","note":"Waardenburg huwelijk 1815 én onafhankelijke Meteren-dooptranscriptie 16 maart 1794 geven dezelfde geboortedatum en ouders Hendrik Verbeek × Clazina de Bruin."},
+    {"id":"barend1826-parentage","priority":"high","status":"BLOCKED","note":"Twee gerichte runs leverden geen direct raadpleegbare officiële oudervermelding op. Hervatten zodra Varik akte 6 (1864), Heerewaarden akte 36 (1876) of geboorteakte 1826 direct raadpleegbaar is."},
+    {"id":"jan1871-parentage","priority":"high","status":"BLOCKED","note":"Herhaalde gerichte zoekroutes leverden geen officiële oudervermelding op; hervatten bij nieuwe primaire aanwijzing."}
   ],
   "conflictQueue": [
     {"id":"hendrik-verbeek-name-retrojection","issue":"Latere genealogieën noemen Hendrik Gerritsen Verbeek, terwijl bekende primaire transcripties uit 1692 en 1717 de naam Verbeek niet gebruiken.","priority":"high"}
   ],
   "coverage": [
     {"claimId":"surname-verbeek-hendrik1692","sourceCategory":"DTB huwelijk Meteren","period":"1717","result":"checked-negative-for-surname","detail":"14 maart 1717: Hendrik Geertsen x Heijltjen Jans; geen Verbeek."},
-    {"claimId":"surname-verbeek-hendrik1692","sourceCategory":"web-index/search","period":"1717-1755","result":"no-conclusive-primary-hit","detail":"Geen bruikbare primaire koppeling gevonden."},
-    {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"secondary genealogies","period":"ca. 1630-1680","result":"explicit-claim-unproven","detail":"Meerdere online genealogieën plaatsen Jenneke in gezin Dirk Formijn x Grietje van Opijnen; primaire bron niet zichtbaar en onafhankelijkheid onzeker."},
-    {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"Bank van Tuil inv.nr. 1251 index","period":"1647-1653","result":"father-context-only","detail":"Dirk Formijn komt op meerdere folio's voor; index bewijst de ouder-kindrelatie niet."},
-    {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"specialist literature discovery","period":"1982-1983","result":"high-value-source-identified-not-yet-inspected","detail":"CBG noemt H.A.P. van Gessel, Genealogie Formijn(e)/Formijne en 'Van hypothese naar bewijs' GN 38 (1983), p.57; NGV catalogus bevestigt Genealogie van het geslacht Formijne, signatuur B-111-FORM-01."},
-    {"claimId":"hendrik1794-parentage","sourceCategory":"Burgerlijke stand huwelijk Waardenburg","period":"1815","result":"confirmed-parentage","detail":"Akte nr. 1, 25 februari 1815: Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, zoon van Hendrik Verbeek en Clazina de Bruijn; Gelders Archief 0207, inv. 2720.05."},
-    {"claimId":"barend1826-parentage","sourceCategory":"secondary genealogy with archive citations","period":"1826-1876","result":"strong-indirect-parentage","detail":"Stamboom Middag noemt Barend als kind van Hendrik Verbeek en Maria Magdalena van den Berg en verwijst naar Gelders Archief akte 6 (huwelijk 1864) en akte 36 (overlijden 1876)."},
-    {"claimId":"barend1826-parentage","sourceCategory":"Gelders Archief BS geboorte Heerewaarden","period":"1868","result":"identity-corroboration","detail":"Geboorteakte zoon Hendrik Verbeek, akte 10, 15-04-1868: vader Barend Verbeek, 42 jaar, arbeider; moeder Geertruida van Aalst. Bevestigt identiteit, leeftijdsrange, partner en wooncontext maar niet Barends ouders."},
-    {"claimId":"barend1826-parentage","sourceCategory":"targeted web search for official marriage/death record","period":"1864-1876","result":"repeated-no-direct-official-parentage-hit","detail":"Tweede gerichte zoekronde op Varik huwelijk 1864 en Heerewaarden overlijden 1876 leverde opnieuw dezelfde secundaire publicaties plus de reeds bekende 1868-officiële identiteitsakte, maar geen direct raadpleegbare oudervermelding. Claim tijdelijk BLOCKED om herhalingswerk te voorkomen."},
-    {"claimId":"jan1871-parentage","sourceCategory":"burial-name index","period":"1871-1935","result":"lifespan-candidate-only","detail":"Online-Begraafplaatsen naamindex bevat Jan Verbeek (1871-1935), maar de zichtbare index geeft geen ouders, partner, geboorteplaats of overlijdensplaats; onvoldoende voor identificatie of parentage."},
-    {"claimId":"jan1871-parentage","sourceCategory":"targeted web search official/civil registration","period":"1871-1935","result":"repeated-no-direct-parentage-hit","detail":"Herhaalde zoekroutes op Jan + ouderpaar + Heerewaarden/Varik en vervolgens via partnerkandidaat Johanna Catharina Berends en zoon Johann Anton Verbeek leverden geen officiële oudervermelding op."},
-    {"claimId":"jan1871-parentage","sourceCategory":"secondary family cluster","period":"1903-1910","result":"identity-route-only","detail":"Genealogie Online koppelt Jan Verbeek 1871-1935 aan Johanna Catharina Berends en kinderen Theodor, Anna Maria Margareta, Johann Anton en Johanna Geertruida. Bruikbaar als toekomstig zoekcluster, niet als bewijs van Jans ouders."}
+    {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"specialist literature discovery","period":"1982-1983","result":"high-value-source-identified-not-yet-inspected","detail":"H.A.P. van Gessel-publicatie geïdentificeerd; nog niet inhoudelijk gecontroleerd."},
+    {"claimId":"hendrik1750-parentage","sourceCategory":"NGV/HGWBB Doopboek Meteren 1772-1947","period":"1791","result":"identity-nameform-confirmed-parentage-not-proven","detail":"8-2-1791 geboren, 13-2 gedoopt: Peter, zoon van Hendrik Petersen Verbeek en Klazina de Bruin; getuige Korsje Verbeek. Bewijst historische naamvorm van vader, niet diens ouders."},
+    {"claimId":"hendrik1794-parentage","sourceCategory":"Burgerlijke stand huwelijk Waardenburg","period":"1815","result":"confirmed-parentage","detail":"Akte nr. 1, 25 februari 1815: Hendrik Verbeek, geboren 13 maart 1794, zoon van Hendrik Verbeek en Clazina de Bruijn."},
+    {"claimId":"hendrik1794-parentage","sourceCategory":"NGV/HGWBB Doopboek Meteren 1772-1947","period":"1794","result":"independent-confirmation","detail":"13-3-1794 geboren, 16-3 gedoopt: Hendrik, zoon van Hendrik Verbeek en Clazina de Bruin, echtelieden."},
+    {"claimId":"barend1826-parentage","sourceCategory":"targeted web search","period":"1826-1876","result":"blocked-after-repeat","detail":"Geen direct raadpleegbare officiële oudervermelding na herhaalde gerichte routes."},
+    {"claimId":"jan1871-parentage","sourceCategory":"targeted web search","period":"1871-1935","result":"blocked-after-repeat","detail":"Geen officiële oudervermelding na herhaalde gerichte routes via ouderpaar en partner/kindcluster."}
   ]
 }
