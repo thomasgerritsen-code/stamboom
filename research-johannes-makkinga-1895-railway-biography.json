@@ -8,65 +8,50 @@
   },
   "researchFocus": "railway career, residences and household movements in the 1920s-1930s",
   "runSelection": {
-    "question": "Kan Johannes Makkinga's werk bij de Nederlandse Spoorwegen en zijn verhuizing naar Pijnacker in 1934 betrouwbaar worden gereconstrueerd?",
-    "value": "A railway occupation plus successive residences can turn a bare ancestor record into a chronological working-life biography.",
-    "sourceRoutes": [
-      "Pijnacker population/residence registers and family cards",
-      "Dutch railway personnel records / Utrechts Archief spoorweg archives",
-      "municipal population registers for Borculo, Wolvega and Pijnacker",
-      "contemporary address books and newspapers"
-    ],
-    "stopCriterion": "Confirm at least one dated residence and railway function in a primary or official archival record, or mark the route blocked after repeated high-quality searches."
+    "question": "Kan Johannes Makkinga's vroege gezins- en spoorwegchronologie vóór Pijnacker worden verankerd?",
+    "value": "Een gedateerd huwelijk met ouders en geboorteplaatsen vormt een sterke identiteitsbrug tussen de Ommen-afkomst, het gezin in Enschede en de latere NS-verhuizingen.",
+    "sourceRoutes": ["Enschede civil marriage register 1921", "Pijnacker population/residence registers", "Dutch railway personnel records", "municipal population registers for Borculo and Wolvega"],
+    "stopCriterion": "Confirm a dated identity/residence/career event in an official-derived or primary source."
   },
   "claims": [
     {
-      "claim": "A local-history reconstruction of Pijnacker's Stationsstraat identifies Johannes Makkinga, born 2 October 1895 in Stad Ommen, and Everijntje Schoonderbeek, born 19 May 1895 in Veenendaal, as residents there in 1934.",
-      "status": "PROBABLE",
+      "claim": "Johannes Makkinga married Everijntje Schoonderbeek in Enschede on 9 April 1921, marriage record no. 84; he was 25, born in Stad Ommen, son of Gerrit Makkinga and Hendrina Pasman. Everijntje was 25, born in Veenendaal, daughter of Hendrikus Schoonderbeek and Aaltje Stuivenberg.",
+      "status": "CONFIRMED",
       "source": {
-        "title": "Pijnacker in vroeger tijden - Stationsstraat",
-        "url": "https://sites.google.com/view/pijnacker-in-vroeger-tijden/stationsstraat",
-        "sourceType": "local-history reconstruction; underlying register not yet inspected"
+        "institution": "Historisch Centrum Overijssel / Burgerlijke Stand Enschede",
+        "collection": "Huwelijksregister Enschede",
+        "archive": "toegang 123, inventaris 03729, akte 84",
+        "date": "1921-04-09",
+        "derivedIndex": "Genlias transcription reproduced with archival identifiers",
+        "url": "https://www.genealogieonline.nl/stamboom-de-duffelt/I41627.php"
       }
     },
     {
-      "claim": "The same reconstruction describes Johannes as 'assistent bij de N.S.'",
+      "claim": "A local-history reconstruction of Pijnacker's Stationsstraat identifies Johannes Makkinga and Everijntje Schoonderbeek as residents there in 1934 and describes Johannes as 'assistent bij de N.S.'.",
       "status": "PROBABLE",
-      "reason": "Specific and identity-compatible secondary/local-history statement, but the underlying railway personnel or population record has not yet been inspected.",
-      "source": {
-        "title": "Pijnacker in vroeger tijden - Stationsstraat",
-        "url": "https://sites.google.com/view/pijnacker-in-vroeger-tijden/stationsstraat"
-      }
+      "source": {"title":"Pijnacker in vroeger tijden - Stationsstraat","url":"https://sites.google.com/view/pijnacker-in-vroeger-tijden/stationsstraat","sourceType":"local-history reconstruction; underlying register not yet inspected"}
     },
     {
       "claim": "Johannes came to Pijnacker around mid-July 1934 from Borculo, while Everijntje came from Wolvega.",
       "status": "PROBABLE",
-      "reason": "Reported by the same local-history reconstruction; requires confirmation in population registers/family cards.",
-      "source": {
-        "title": "Pijnacker in vroeger tijden - Stationsstraat",
-        "url": "https://sites.google.com/view/pijnacker-in-vroeger-tijden/stationsstraat"
-      }
+      "source": {"title":"Pijnacker in vroeger tijden - Stationsstraat","url":"https://sites.google.com/view/pijnacker-in-vroeger-tijden/stationsstraat"}
     },
     {
       "claim": "Children named in the Pijnacker reconstruction are Gerrit (2 March 1922 Enschede), Aaltje (7 January 1924 Enschede), Henri (2 May 1927 Sint Annaparochie), and Hendrikus (7 September 1934 Pijnacker).",
       "status": "PROBABLE",
-      "reason": "Useful household chronology but each child/date should be checked against civil/population records before publication as confirmed biography.",
-      "source": {
-        "title": "Pijnacker in vroeger tijden - Stationsstraat",
-        "url": "https://sites.google.com/view/pijnacker-in-vroeger-tijden/stationsstraat"
-      }
+      "source": {"title":"Pijnacker in vroeger tijden - Stationsstraat","url":"https://sites.google.com/view/pijnacker-in-vroeger-tijden/stationsstraat"}
     }
   ],
   "chronology": [
-    {"date":"1895-10-02","place":"Stad Ommen","event":"birth","status":"PROBABLE","note":"identity anchor in current research lead; verify against civil birth record"},
+    {"date":"1895-10-02","place":"Stad Ommen","event":"birth identity anchor","status":"CONFIRMED","note":"birthplace and age independently anchored by 1921 marriage record; exact birth date remains from existing family data"},
+    {"date":"1921-04-09","place":"Enschede","event":"married Everijntje Schoonderbeek; parents of both spouses recorded","status":"CONFIRMED"},
     {"date":"1922-03-02","place":"Enschede","event":"son Gerrit born","status":"PROBABLE"},
     {"date":"1924-01-07","place":"Enschede","event":"daughter Aaltje born","status":"PROBABLE"},
     {"date":"1927-05-02","place":"Sint Annaparochie","event":"son Henri born","status":"PROBABLE"},
     {"period":"mid-July 1934","from":"Borculo","to":"Pijnacker","event":"Johannes reportedly moves to Pijnacker; employed as NS assistant","status":"PROBABLE"},
     {"date":"1934-09-07","place":"Pijnacker","event":"son Hendrikus born","status":"PROBABLE"}
   ],
-  "negativeSearch": [
-    "Targeted web searches for Johannes Makkinga + NS/spoorwegen/Borculo/Wolvega/Pijnacker did not yet surface a digitized primary railway personnel record."
-  ],
-  "publicationPolicy": "Do not present the NS function, Borculo-to-Pijnacker move, or Stationsstraat residence as CONFIRMED on the public tree until the underlying population register, family card, railway personnel record, or equivalent official source is inspected.",
-  "nextBestStep": "Locate the Pijnacker population register/family card for the household around July 1934 and then use its occupation and previous-residence fields to target Johannes in Dutch railway personnel archives."
+  "negativeSearch": ["Targeted searches still did not surface a digitized primary railway personnel record for Johannes Makkinga."],
+  "publicationPolicy": "The 1921 marriage identity claim may be published as CONFIRMED with archival citation. Do not present the NS function, Borculo-to-Pijnacker move, or Stationsstraat residence as CONFIRMED until the underlying official record is inspected.",
+  "nextBestStep": "Locate Johannes' NS personnel record or Pijnacker population card to establish appointment dates, stations and rank changes."
 }
