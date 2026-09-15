@@ -1,0 +1,42 @@
+{
+  "researchId": "hendrik1750-fan-anneke1757",
+  "updated": "2026-09-15",
+  "question": "Kan Anneke Verbeek als collateral/FAN-relatie helpen bij de ouderclaim van Hendrik Peters/Petersen Verbeek (ca. 1750-1798)?",
+  "status": "CANDIDATE",
+  "findings": [
+    {
+      "claim": "Anneke, gedoopt 23 januari 1757 te Meteren, was een dochter van Peter Verbeek en Lena Verburg.",
+      "status": "CONFIRMED",
+      "source": {
+        "institution": "Ons Voorgeslacht / HGWBB",
+        "collection": "Dopen Meteren (NG) 1664-1771, transcriptie samengesteld uit kerkregister",
+        "date": "1757-01-23",
+        "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1828",
+        "sourceForm": "transcriptie, geen originele scan gecontroleerd",
+        "literalSummary": "Anneke; vader Peter Verbeek; moeder Lena Verburg; wonend Geldermalsen, wegens strenge koude te Meteren gedoopt."
+      }
+    },
+    {
+      "claim": "Peter Verbeek was op 13 februari 1756 weduwnaar van Corsje van der Burgh en trouwde 27 februari 1756 met Leena Verburgh.",
+      "status": "CONFIRMED",
+      "source": {
+        "institution": "Ons Voorgeslacht / HGWBB",
+        "collection": "Geldermalsen trouwtranscriptie, samengesteld aan de hand van originele documenten",
+        "date": "1756-02-13/1756-02-27",
+        "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=800",
+        "sourceForm": "transcriptie, geen originele scan gecontroleerd"
+      }
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "Een secundaire genealogie noemt Anneke Verbeek geboren ca. 1750 als dochter van Peter Verbeek en Leena van de Burgh.",
+      "assessment": "Die combinatie is chronologisch strijdig met de kerkelijke trouwtranscriptie: Peter trouwde pas in februari 1756 met Leena. De kerkelijke dooptranscriptie geeft daarentegen een Anneke van dit ouderpaar op 23 januari 1757. De secundaire geboortedatering ca. 1750 mag daarom niet worden overgenomen.",
+      "status": "REJECTED",
+      "secondaryTrail": "https://www.genealogieonline.nl/stamboom-van-henbergen-olivier/I500136.php"
+    }
+  ],
+  "relevanceToHendrik1750": "De 1757-doop bevestigt Peters tweede gezin en de naam Anneke binnen de collateral familie, maar koppelt Hendrik zelf niet aan Peter en Corsje. Een latere Anneke-getuige kan pas als sibling/half-siblingbewijs dienen nadat haar identiteit over de gebeurtenissen heen afzonderlijk is bewezen.",
+  "publicationDecision": "Geen wijziging aan de publieke directe lijn; alleen onderzoeksdossier/conflictregistratie.",
+  "bestNextSource": "Zoek een huwelijk of overlijdensakte van Anneke Verbeek (mogelijk echtgenote van Willem van Soelen) die leeftijd/ouders noemt, en blijf parallel zoeken naar Hendriks eigen doop/boedelvermelding ca. 1750."
+}
