@@ -1,14 +1,14 @@
 {
-  "version": 7,
+  "version": 8,
   "updated": "2026-09-15",
   "activeQuestion": {
     "id": "jan1871-parentage",
     "question": "Kan de ouder-kindrelatie Jan Verbeek (1871-1935) → Barend Verbeek (1826-1876) en Geertruida van Aalst (1840-1916) rechtstreeks uit de burgerlijke stand worden bevestigd?",
     "importance": "Directe Verbeek-lijn; een officiële geboorte-, huwelijks- of overlijdensakte kan deze generatielink efficiënt en onafhankelijk bevestigen.",
-    "status": "CANDIDATE",
-    "lastAction": "Gerichte webzoekronde uitgevoerd op Jan Verbeek 1871-1935, Heerewaarden/Varik en ouderpaar Barend Verbeek + Geertruida van Aalst. Online-Begraafplaatsen bevat een Jan Verbeek met levensduur 1871-1935, maar zonder in de zoekindex zichtbare oudergegevens of voldoende identiteitssleutels. Exacte zoekopdrachten op ouderpaar leverden geen official-derived geboorte- of huwelijksakte van Jan op.",
+    "status": "BLOCKED",
+    "lastAction": "Na eerdere zoekrondes is opnieuw gericht gezocht via Jan Verbeek, partnerkandidaat Johanna Catharina Berends en zoon Johann Anton Verbeek (1907-1972). De enige nieuwe gezinscontext blijft een secundaire Genealogie Online-publicatie; geen officiële akte met Jans ouders werd gevonden. De begraafplaatsindex bevestigt alleen dat een Jan Verbeek 1871-1935 bestaat.",
     "missingEvidence": "Een official-derived geboorte-, huwelijks- of overlijdensregistratie van Jan Verbeek waarin Barend Verbeek en Geertruida van Aalst expliciet als ouders worden genoemd, plus voldoende gegevens om de Jan 1871-1935-identiteit vast te zetten.",
-    "bestNextSource": "Zoek Jan zijn huwelijksakte en overlijdensakte via plaats/partner/context van zijn zoon Johann Anton Verbeek (1907-1972); gebruik daarna geboortedatum/-plaats uit die akten om de geboorte-inschrijving gericht te vinden.",
+    "bestNextSource": "Hervat alleen bij een nieuwe concrete akte-index, exacte geboorte-/huwelijksplaats of andere primaire aanwijzing; schakel intussen naar een andere hoogwaardige directe-lijnclaim.",
     "stopCriterion": "Stop zodra één officiële akte Jan expliciet aan Barend Verbeek en Geertruida van Aalst koppelt en identiteit/chronologie overeenkomen."
   },
   "openClaims": [
@@ -17,7 +17,7 @@
     {"id":"jenneke-dircks-formijne-parentage","priority":"high","status":"BLOCKED","note":"Secundaire bomen noemen Jenneke als dochter van Dirk Formijn en Grietje van Opijnen; primaire bevestiging ontbreekt. Van-Gessel-publicatie blijft de eerstvolgende gerichte bronroute."},
     {"id":"hendrik1794-parentage","priority":"high","status":"CONFIRMED","note":"Waardenburg huwelijksakte nr. 1 van 25 februari 1815 noemt Hendrik Verbeek, geboren 13 maart 1794 te Geldermalsen, zoon van Hendrik Verbeek en Clazina de Bruijn."},
     {"id":"barend1826-parentage","priority":"high","status":"BLOCKED","note":"Twee gerichte runs leverden geen direct raadpleegbare officiële oudervermelding op. Secundaire bronnen plus officiële 1868-identiteitscontrole ondersteunen de hypothese sterk, maar niet genoeg voor CONFIRMED. Hervatten zodra Varik akte 6 (1864), Heerewaarden akte 36 (1876) of geboorteakte 1826 direct raadpleegbaar is."},
-    {"id":"jan1871-parentage","priority":"high","status":"CANDIDATE","note":"Eerste gerichte run bevestigt alleen dat een Jan Verbeek 1871-1935 in een begraafplaatsnaamindex voorkomt; ouderpaar en identiteit zijn nog niet officieel gekoppeld. Volgende route: huwelijk/overlijden via partner of zoon Johann Anton."}
+    {"id":"jan1871-parentage","priority":"high","status":"BLOCKED","note":"Herhaalde gerichte zoekroutes via ouderpaar, plaatscontext en partner/kindcluster leverden geen officiële oudervermelding op. Alleen secundaire gezinscontext en een identiteit-arme begraafplaatsindex zijn gevonden; hervatten bij nieuwe primaire aanwijzing."}
   ],
   "conflictQueue": [
     {"id":"hendrik-verbeek-name-retrojection","issue":"Latere genealogieën noemen Hendrik Gerritsen Verbeek, terwijl bekende primaire transcripties uit 1692 en 1717 de naam Verbeek niet gebruiken.","priority":"high"}
@@ -33,6 +33,7 @@
     {"claimId":"barend1826-parentage","sourceCategory":"Gelders Archief BS geboorte Heerewaarden","period":"1868","result":"identity-corroboration","detail":"Geboorteakte zoon Hendrik Verbeek, akte 10, 15-04-1868: vader Barend Verbeek, 42 jaar, arbeider; moeder Geertruida van Aalst. Bevestigt identiteit, leeftijdsrange, partner en wooncontext maar niet Barends ouders."},
     {"claimId":"barend1826-parentage","sourceCategory":"targeted web search for official marriage/death record","period":"1864-1876","result":"repeated-no-direct-official-parentage-hit","detail":"Tweede gerichte zoekronde op Varik huwelijk 1864 en Heerewaarden overlijden 1876 leverde opnieuw dezelfde secundaire publicaties plus de reeds bekende 1868-officiële identiteitsakte, maar geen direct raadpleegbare oudervermelding. Claim tijdelijk BLOCKED om herhalingswerk te voorkomen."},
     {"claimId":"jan1871-parentage","sourceCategory":"burial-name index","period":"1871-1935","result":"lifespan-candidate-only","detail":"Online-Begraafplaatsen naamindex bevat Jan Verbeek (1871-1935), maar de zichtbare index geeft geen ouders, partner, geboorteplaats of overlijdensplaats; onvoldoende voor identificatie of parentage."},
-    {"claimId":"jan1871-parentage","sourceCategory":"targeted web search official/civil registration","period":"1871-1935","result":"no-direct-parentage-hit-first-run","detail":"Zoeken op Jan Verbeek + Heerewaarden/Varik + Barend Verbeek + Geertruida van Aalst leverde geen rechtstreeks raadpleegbare officiële geboorte-, huwelijks- of overlijdensregistratie van Jan op. Volgende route verschuift naar huwelijk/overlijden via partner/zooncontext."}
+    {"claimId":"jan1871-parentage","sourceCategory":"targeted web search official/civil registration","period":"1871-1935","result":"repeated-no-direct-parentage-hit","detail":"Herhaalde zoekroutes op Jan + ouderpaar + Heerewaarden/Varik en vervolgens via partnerkandidaat Johanna Catharina Berends en zoon Johann Anton Verbeek leverden geen officiële oudervermelding op."},
+    {"claimId":"jan1871-parentage","sourceCategory":"secondary family cluster","period":"1903-1910","result":"identity-route-only","detail":"Genealogie Online koppelt Jan Verbeek 1871-1935 aan Johanna Catharina Berends en kinderen Theodor, Anna Maria Margareta, Johann Anton en Johanna Geertruida. Bruikbaar als toekomstig zoekcluster, niet als bewijs van Jans ouders."}
   ]
 }
