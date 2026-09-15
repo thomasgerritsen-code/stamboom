@@ -1,0 +1,55 @@
+{
+  "person": {
+    "name": "Barend Verbeek",
+    "birth": "1826-02-18",
+    "birthPlace": "Neerijnen/Waardenburg",
+    "death": "1876-09-10",
+    "deathPlace": "Heerewaarden",
+    "relationshipContext": "direct Verbeek line; son of Hendrik Verbeek and Maria Magdalena van den Berg"
+  },
+  "researchFocus": "occupation and household life in the 1860s",
+  "claims": [
+    {
+      "claim": "On the official-derived birth registration of his son Hendrik Verbeek, born 13 April 1868 in Heerewaarden, Barend Verbeek is recorded as 42 years old and an arbeider (labourer).",
+      "status": "CONFIRMED",
+      "identityChecks": ["name Barend Verbeek", "age 42 fits birth 1826", "spouse Geertruida van Aalst", "place Heerewaarden"],
+      "source": {
+        "institution": "Gelders Archief",
+        "collection": "Burgerlijke stand Gelderland, dubbelen, Heerewaarden, BS Geboorte",
+        "archive": "0207",
+        "inventory": "4259.19",
+        "recordDate": "1868-04-15",
+        "recordNumber": "10",
+        "childBirthDate": "1868-04-13",
+        "url": "https://permalink.geldersarchief.nl/B987A93D0DE34D89B81AAB370693DC64",
+        "indexUrl": "https://www.openarchieven.nl/gld:B987A93D-0DE3-4D89-B81A-AB370693DC64"
+      }
+    },
+    {
+      "claim": "A secondary genealogy reports Barend's occupation in 1864 as boerenknecht and his marriage to Geertruida van Aalst on 2 April 1864 in Varik (akte 6, Gelders Archief).",
+      "status": "CANDIDATE",
+      "reason": "Useful lead, but this run did not retrieve the underlying official marriage index/scan; occupation should not be published yet.",
+      "source": {
+        "type": "secondary genealogy",
+        "title": "Stamboom Middag - Barend Verbeek (1826-1876)",
+        "url": "https://www.genealogieonline.nl/stamboom-middag/I8307.php"
+      }
+    }
+  ],
+  "chronology": [
+    {"date":"1826-02-18","place":"Neerijnen/Waardenburg","event":"birth","status":"PROBABLE"},
+    {"date":"1864-04-02","place":"Varik","event":"marriage to Geertruida van Aalst; secondary source also says occupation boerenknecht","status":"CANDIDATE"},
+    {"date":"1868-04-15","place":"Heerewaarden","event":"birth registration of son Hendrik; Barend recorded as 42-year-old arbeider","status":"CONFIRMED"},
+    {"date":"1876-09-10","place":"Heerewaarden","event":"death","status":"PROBABLE"}
+  ],
+  "interpretation": {
+    "status": "PROBABLE",
+    "text": "If the 1864 marriage record confirms boerenknecht, the evidence would document a useful occupational transition/name change from the more specific agricultural servant 'boerenknecht' in 1864 to the broader 'arbeider' in 1868. This must not be stated as fact until the 1864 primary/official-derived record is checked."
+  },
+  "openQuestions": [
+    "Does the original/official-derived Varik marriage record of 2 April 1864 explicitly call Barend a boerenknecht?",
+    "What occupations are recorded for Barend on the birth registrations of his other children between 1864 and 1876?",
+    "Can population registers establish the household's exact addresses and move from Varik to Heerewaarden?"
+  ],
+  "publicationPolicy": "The 1868 occupation arbeider is suitable for public presentation as CONFIRMED with citation. Keep boerenknecht (1864) research-only until the underlying official record is retrieved."
+}
