@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "updated": "2026-09-15",
+  "claimId": "jan1871-parentage",
+  "status": "CANDIDATE",
+  "centralQuestion": "Kan Jan Verbeek (1871-1935) via zijn partner en kinderen voldoende worden geïdentificeerd om zijn ouderpaar Barend Verbeek en Geertruida van Aalst rechtstreeks in de burgerlijke stand te toetsen?",
+  "newEvidence": [
+    {
+      "kind": "secondary-genealogy",
+      "source": "Genealogie Online, Stamboom van Schaik, Oskam, Verbeek, Werkhoven en Spithoven, profiel Johanna Catharina Berends (1868-1939)",
+      "url": "https://www.genealogieonline.nl/stamboom-van-schaik-oskam-verbeek-werkhoven/I9215.php",
+      "weight": "low",
+      "independence": "uncertain",
+      "note": "Noemt Jan Verbeek (1871-1935) als partner van Johanna Catharina Berends (1868-1939) en noemt vier kinderen: Theodor (1903), Anna Maria Margareta (1904-1980), Johann Anton (1907-1972) en Johanna Geertruida (1910-1997). Dit is nog geen bewijs van Jans ouders, maar levert nieuwe identiteitssleutels voor gericht zoeken in burgerlijke stand en bevolkingsregisters."
+    },
+    {
+      "kind": "burial-name-index",
+      "source": "Online-Begraafplaatsen, naamindex Verbeek",
+      "url": "https://www.online-begraafplaatsen.nl/naamindex/VERB",
+      "weight": "low",
+      "independence": "independent but identity-poor",
+      "note": "Bevat Johann Anton Verbeek (1907-1972), passend bij de secundair genoemde zoon, maar de naamindex alleen toont geen ouderpaar en bewijst de gezinsrelatie niet."
+    }
+  ],
+  "conflicts": [],
+  "missingEvidence": "Een officiële geboorteakte van een van de kinderen of een huwelijks-/overlijdensakte van Jan waarin voldoende identiteitssleutels staan; uiteindelijk een officiële akte waarin Jans ouders expliciet worden genoemd.",
+  "searchCoverage": [
+    "Exact zoeken op Jan Verbeek + Johanna Catharina Berends + huwelijk leverde geen direct raadpleegbare officiële huwelijksakte op.",
+    "Zoeken op Johann Anton Verbeek 1907 + oudercontext leverde geen direct raadpleegbare officiële geboorteakte op.",
+    "De partner- en siblingcluster is nu wel voldoende specifiek om volgende runs op Renkum/Heteren en omliggende burgerlijke-stand- en bevolkingsregisters te richten."
+  ],
+  "bestNextSource": "Zoek eerst de geboorteakte van Theodor Verbeek (ca. 1903), Anna Maria Margareta Verbeek (ca. 1904), Johann Anton Verbeek (1907) of Johanna Geertruida Verbeek (1910) met ouders Jan Verbeek en Johanna Catharina Berends. Zo'n akte kan woonplaats, beroep en exacte ouderidentiteit leveren; zoek daarna Jans huwelijk/overlijden en geboorteakte.",
+  "publicationDecision": "Geen wijziging aan de publieke stamboom: de nieuwe informatie is secundair en blijft onderzoeksspoor."
+}
