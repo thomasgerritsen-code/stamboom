@@ -1,0 +1,43 @@
+{
+  "researchQuestion": "Is Anneke Verbeek, echtgenote van Willem van Zoelen/Soelen en FAN-relatie rond Hendrik Verbeek, identiek aan de in 1757 gedoopte dochter van Peter Verbeek en Lena Verburg?",
+  "status": "CANDIDATE",
+  "updated": "2026-09-15",
+  "importance": "Een bevestigde identiteit zou een collateral/halfsibling-brug leveren voor de open directe-lijnclaim hendrik1750-parentage.",
+  "evidence": [
+    {
+      "kind": "church-register-transcription",
+      "source": "Ons Voorgeslacht/HGWBB, Geldermalsen dopen 1772-1815",
+      "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=798",
+      "date": "1783-06-01",
+      "fact": "Peter, geboren 26 mei en gedoopt 1 juni 1783, zoon van Willem van Zoelen en Anneke Verbeek, echtelieden; getuige Heelke van Schaaik.",
+      "weight": "high",
+      "proves": "Er bestond in 1783 te Geldermalsen een echtpaar Willem van Zoelen × Anneke Verbeek; bewijst niet welke Anneke Verbeek dit was."
+    },
+    {
+      "kind": "church-register-transcription",
+      "source": "Ons Voorgeslacht/HGWBB, Geldermalsen dopen 1772-1815",
+      "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=798",
+      "fact": "Dezelfde transcriptie bevat later Maria, dochter van Willem van Soelen en Anneke Verbeek, echtelieden.",
+      "weight": "medium",
+      "proves": "Ondersteunt continuiteit van hetzelfde genoemde echtpaar in Geldermalsen; geen ouderidentificatie van Anneke."
+    },
+    {
+      "kind": "secondary-genealogy",
+      "source": "Genealogie Online, Stamboom Van Henbergen-Olivier",
+      "url": "https://www.genealogieonline.nl/stamboom-van-henbergen-olivier/I500136.php",
+      "fact": "Publiceert Anneke Verbeek als echtgenote van Willem van Soelen, huwelijk 2 december 1781 Meteren en overlijden 23 december 1823 Geldermalsen, maar geeft geboortejaar 1750 en baseert de zichtbare bron op een Smart Match/MyHeritage-familiesite.",
+      "weight": "low",
+      "proves": "Alleen onderzoeksspoor; geboortejaar conflicteert met de eerder aangetroffen kerkelijke doop van een Anneke, dochter van Peter Verbeek en Lena Verburg, in 1757."
+    }
+  ],
+  "conflicts": [
+    "Secundaire bomen geven Anneke geboortejaren 1749/1750, terwijl eerder onderzoek een kerkelijke doopinschrijving uit 1757 voor Anneke, dochter van Peter Verbeek en Lena Verburg, vond. Zonder huwelijks- of overlijdensbron die ouders/leeftijd/herkomst koppelt mogen deze identiteiten niet worden samengevoegd."
+  ],
+  "negativeEvidence": [
+    "Gerichte webzoekopdrachten op Anneke Verbeek + Willem van Soelen/Zoelen + overlijden 1823 leverden geen officiële burgerlijke overlijdensindex op die in deze run controleerbaar haar ouders vermeldt.",
+    "De gevonden secundaire huwelijkspublicaties tonen geen primaire bronverwijzing voor Anneke's ouders."
+  ],
+  "conclusion": "Het huwelijk/gezin Willem van Zoelen × Anneke Verbeek is via een kerkregistertranscriptie zelfstandig aangetoond, maar de identificatie van deze Anneke met de dochter van Peter Verbeek en Lena Verburg blijft CANDIDATE.",
+  "bestNextSource": "Originele/archieftranscriptie van het huwelijk Meteren 2 december 1781, met nadruk op herkomst/woonplaats en eventuele getuigen; daarna officiële overlijdensakte Geldermalsen 23 december 1823 indien deze datum bevestigd kan worden.",
+  "publicationRule": "Geen nieuwe familieband of geboortedatum op de publieke stamboom publiceren totdat de Anneke-identiteit CONFIRMED is."
+}
