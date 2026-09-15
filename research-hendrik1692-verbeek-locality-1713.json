@@ -1,0 +1,39 @@
+{
+  "researchQuestion": "Was de familienaam Verbeek al aantoonbaar in Hendrik Geertsens directe Meterense omgeving in gebruik vóór zijn huwelijk van 1717?",
+  "importance": "Dit helpt beoordelen of 'Verbeek' bij Hendrik 1692 een latere retrojectie is of een naam die in dezelfde plaats/patroniemgroep al vóór 1717 voorkwam.",
+  "status": "CANDIDATE",
+  "result": "Een betrouwbare archieftranscriptie van het Meterense trouwboek vermeldt op 8 april 1713 ondertrouw en 7 mei 1713 huwelijk van 'Dirk Geertsen Verbeek', geboren te Meteren, met Christijntje Joosten van Loenen. Dit bewijst dat de naamvorm Verbeek in Meteren vóór Hendrik Geertsens huwelijk van 1717 daadwerkelijk werd gebruikt door een man met hetzelfde patroniem Geertsen. Het bewijst NIET dat Dirk en Hendrik broers waren, noch dat Hendrik zelf toen Verbeek heette.",
+  "evidence": [
+    {
+      "type": "official-derived church-book transcription",
+      "archivePublisher": "Ons Voorgeslacht / HGWBB transcriptiedatabank",
+      "collection": "Trouwboek Meteren (NG)",
+      "dateBetrothal": "1713-04-08",
+      "dateMarriage": "1713-05-07",
+      "literalName": "Dirk Geertsen Verbeek",
+      "residenceOrigin": "geb. Meteren",
+      "spouse": "Christijntje Joosten van Loenen",
+      "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1829",
+      "supports": "Verbeek surname was in documented use in Meteren by 1713 in combination with patronymic Geertsen."
+    },
+    {
+      "type": "official-derived church-book transcription",
+      "archivePublisher": "Ons Voorgeslacht / HGWBB transcriptiedatabank",
+      "collection": "Trouwboek Meteren (NG)",
+      "dateBetrothal": "1717-03-14",
+      "literalName": "Hendrik Geertsen",
+      "spouse": "Heijltjen Jans",
+      "statusResidence": "jm wnd Meteren / jd wnd Meteren",
+      "url": "https://www.onsvoorgeslacht.nl/wp-content/plugins/typify-databank/download.php?item_id=1829",
+      "supports": "Hendrik's own 1717 marriage entry does not use Verbeek."
+    }
+  ],
+  "conflictAssessment": "The 1713 record weakens any assumption that 'Verbeek' was wholly absent from Hendrik's local milieu, but does not resolve the central identity/name conflict because no kinship between Dirk Geertsen Verbeek and Hendrik Geertsen is yet demonstrated.",
+  "publicationDecision": "Do not add Verbeek as a confirmed 1717 name form for Hendrik on this evidence alone.",
+  "nextBestSource": "Find Dirk Geertsen Verbeek's baptism/parentage or a probate, guardianship, notarial or church record naming Dirk and Hendrik together or naming their parents; compare with Hendrik's confirmed 1692 baptism parentage.",
+  "searchCoverage": [
+    "Meteren NG marriage transcription 1713",
+    "Meteren NG marriage transcription 1717",
+    "targeted web searches for Dirk Geertsen Verbeek parentage"
+  ]
+}
