@@ -1,21 +1,21 @@
 {
-  "version": 9,
+  "version": 10,
   "updated": "2026-09-15",
   "activeQuestion": {
     "id": "hendrik1750-parentage",
     "question": "Kan Hendrik Peters/Petersen Verbeek (ca. 1750-1798) rechtstreeks aan Peter Hendrikse Verbeek en Corsje Zweers van der Burg worden gekoppeld?",
-    "importance": "Directe Verbeek-lijn; dit is een nog niet in de claim-ledger bewezen 18e-eeuwse generatielink tussen de CONFIRMED 1794-generatie en Peter Hendrikse Verbeek.",
+    "importance": "Directe Verbeek-lijn; dit is een nog niet primair bewezen 18e-eeuwse generatielink.",
     "status": "CANDIDATE",
-    "lastAction": "NGV/HGWBB-transcriptie van het Doopboek Meteren 1772-1947 gecontroleerd. De doop van zoon Peter op 13 februari 1791 noemt de vader expliciet 'Hendrik Petersen Verbeek' en Klazina de Bruin; de doop van Hendrik op 16 maart 1794 noemt Hendrik Verbeek en Clazina de Bruin. Dit bevestigt de historische patroniem+familienaamvorm van de vader en levert een onafhankelijke kerkelijke cross-check van de reeds CONFIRMED 1794-parentage, maar bewijst Hendriks eigen ouders nog niet.",
-    "missingEvidence": "Een doop-, huwelijks-, boedel- of andere primaire/official-derived bron die Hendrik Peters/Petersen Verbeek zelf expliciet koppelt aan Peter Hendrikse Verbeek en Corsje Zweers van der Burg.",
-    "bestNextSource": "Meteren/Geldermalsen DTB rond 1748-1751 en huwelijk Hendrik Verbeek × Klazina de Bruin op/omstreeks 27 februari 1779; controleer ook huwelijksinschrijving/-bijlagen indien beschikbaar.",
+    "lastAction": "Gericht gezocht op Hendrik ca.1750, Peter Hendrikse Verbeek en Corsje Zweers van der Burg. Twee afzonderlijk gepubliceerde online genealogieën (Andre van Schaik en Aad Hoek) noemen onafhankelijk van elkaar hetzelfde ouderpaar; een derde Geneanet-publicatie plaatst Hendrik en Zweer als halfbroers van Peters latere kinderen bij Helena/Lena van der Burg. Geen van deze routes toont de primaire doop-/boedel-/huwelijksbron voor Hendriks parentage. De claim blijft daarom CANDIDATE.",
+    "missingEvidence": "Een doop-, huwelijks-, boedel-, voogdij- of andere primaire/official-derived bron die Hendrik Peters/Petersen Verbeek zelf expliciet koppelt aan Peter Hendrikse Verbeek en Corsje Zweers van der Burg.",
+    "bestNextSource": "Zoek niet opnieuw breed op webstambomen; richt de volgende run op Meteren/Geldermalsen DTB vóór 1772 en/of boedel-/voogdijstukken rond het overlijden van Corsje Zweers van der Burg ca.1755, met Hendrik en broer Zweer als FAN-cluster.",
     "stopCriterion": "Stop zodra een betrouwbare primaire of official-derived bron Hendrik expliciet aan Peter Hendrikse Verbeek en Corsje Zweers van der Burg koppelt, met passende identiteit en chronologie."
   },
   "openClaims": [
     {"id":"link-gerrit-hendricksen-to-hendrik-1692","priority":"high","status":"CONFIRMED","note":"Dooptranscriptie 2 oktober 1692 koppelt Hendrik aan Gerrit en Lijsken; familienaam Verbeek staat daar niet als bewezen naamvorm."},
     {"id":"surname-verbeek-hendrik1692","priority":"high","status":"BLOCKED","note":"Doop 1692 en huwelijk 14 maart 1717 gebruiken patroniem/naamvorm zonder Verbeek; hervatten bij nieuwe concrete primaire aanwijzing."},
     {"id":"jenneke-dircks-formijne-parentage","priority":"high","status":"BLOCKED","note":"Secundaire bomen noemen Jenneke als dochter van Dirk Formijn en Grietje van Opijnen; primaire bevestiging ontbreekt. Van-Gessel-publicatie blijft de eerstvolgende gerichte bronroute."},
-    {"id":"hendrik1750-parentage","priority":"high","status":"CANDIDATE","note":"Nieuwe kerkregistertranscriptie bewijst dat de vader in het gezin met Klazina de Bruin in 1791 'Hendrik Petersen Verbeek' werd genoemd, maar zijn eigen ouderpaar Peter Hendrikse Verbeek × Corsje Zweers van der Burg is nog niet primair bevestigd."},
+    {"id":"hendrik1750-parentage","priority":"high","status":"CANDIDATE","note":"Twee afzonderlijk gepubliceerde secundaire genealogieën noemen Peter Hendrikse Verbeek × Corsje Zweers van der Burg als ouders; Geneanet geeft hetzelfde gezin als half-siblingcluster. Bron-onafhankelijkheid van de onderliggende gegevens is onbekend en primaire bevestiging ontbreekt."},
     {"id":"hendrik1794-parentage","priority":"high","status":"CONFIRMED","note":"Waardenburg huwelijk 1815 én onafhankelijke Meteren-dooptranscriptie 16 maart 1794 geven dezelfde geboortedatum en ouders Hendrik Verbeek × Clazina de Bruin."},
     {"id":"barend1826-parentage","priority":"high","status":"BLOCKED","note":"Twee gerichte runs leverden geen direct raadpleegbare officiële oudervermelding op. Hervatten zodra Varik akte 6 (1864), Heerewaarden akte 36 (1876) of geboorteakte 1826 direct raadpleegbaar is."},
     {"id":"jan1871-parentage","priority":"high","status":"BLOCKED","note":"Herhaalde gerichte zoekroutes leverden geen officiële oudervermelding op; hervatten bij nieuwe primaire aanwijzing."}
@@ -27,6 +27,7 @@
     {"claimId":"surname-verbeek-hendrik1692","sourceCategory":"DTB huwelijk Meteren","period":"1717","result":"checked-negative-for-surname","detail":"14 maart 1717: Hendrik Geertsen x Heijltjen Jans; geen Verbeek."},
     {"claimId":"jenneke-dircks-formijne-parentage","sourceCategory":"specialist literature discovery","period":"1982-1983","result":"high-value-source-identified-not-yet-inspected","detail":"H.A.P. van Gessel-publicatie geïdentificeerd; nog niet inhoudelijk gecontroleerd."},
     {"claimId":"hendrik1750-parentage","sourceCategory":"NGV/HGWBB Doopboek Meteren 1772-1947","period":"1791","result":"identity-nameform-confirmed-parentage-not-proven","detail":"8-2-1791 geboren, 13-2 gedoopt: Peter, zoon van Hendrik Petersen Verbeek en Klazina de Bruin; getuige Korsje Verbeek. Bewijst historische naamvorm van vader, niet diens ouders."},
+    {"claimId":"hendrik1750-parentage","sourceCategory":"independent secondary genealogy comparison","period":"1750-1798","result":"corroborated-secondary-only","detail":"Andre van Schaik en Aad Hoek publiceren afzonderlijk Peter Hendrikse Verbeek × Corsje Zweers van der Burg als ouders van Hendrik ca.1750; Geneanet toont hetzelfde vroege gezin als half-siblingcluster. Geen primaire bron zichtbaar; onderliggende onafhankelijkheid onbekend."},
     {"claimId":"hendrik1794-parentage","sourceCategory":"Burgerlijke stand huwelijk Waardenburg","period":"1815","result":"confirmed-parentage","detail":"Akte nr. 1, 25 februari 1815: Hendrik Verbeek, geboren 13 maart 1794, zoon van Hendrik Verbeek en Clazina de Bruijn."},
     {"claimId":"hendrik1794-parentage","sourceCategory":"NGV/HGWBB Doopboek Meteren 1772-1947","period":"1794","result":"independent-confirmation","detail":"13-3-1794 geboren, 16-3 gedoopt: Hendrik, zoon van Hendrik Verbeek en Clazina de Bruin, echtelieden."},
     {"claimId":"barend1826-parentage","sourceCategory":"targeted web search","period":"1826-1876","result":"blocked-after-repeat","detail":"Geen direct raadpleegbare officiële oudervermelding na herhaalde gerichte routes."},
